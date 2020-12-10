@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-    <title>Hielo by TEMPLATED</title>
+    <title>國家美術館</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -91,17 +91,32 @@
                     </div>
                     <div class="content">
                         <header class="align-center">
-                            <p>maecenas sapien feugiat ex purus</p>
-                            <h2>Lorem ipsum dolor</h2>
+
+                            <h2>美術館歷史</h2>
                         </header>
                         <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
                         <footer class="align-center">
-                            <a href="#" class="button alt">Learn More</a>
+                            <a href="{{route('generic.index')}}" class="button alt">Learn More</a>
                         </footer>
                     </div>
                 </div>
             </div>
-
+            <div>
+                <div class="box">
+                    <div class="image fit">
+                        <img src="images/pic02.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <header class="align-center">
+                            <h2>美術館內部</h2>
+                        </header>
+                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+                        <footer class="align-center">
+                            <a href="{{route('generic.index')}}" class="button alt">Learn More</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
             <div>
                 <div class="box">
                     <div class="image fit">
@@ -109,12 +124,11 @@
                     </div>
                     <div class="content">
                         <header class="align-center">
-                            <p>mattis elementum sapien pretium tellus</p>
-                            <h2>Vestibulum sit amet</h2>
+                            <h2>美術館外部</h2>
                         </header>
                         <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
                         <footer class="align-center">
-                            <a href="#" class="button alt">Learn More</a>
+                            <a href="{{route('generic.index')}}" class="button alt">Learn More</a>
                         </footer>
                     </div>
                 </div>

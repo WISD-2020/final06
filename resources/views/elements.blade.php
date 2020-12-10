@@ -15,7 +15,7 @@
 
 <!-- Header -->
 <header id="header">
-    <div class="logo"><a href={{route('home.index')}}>Hielo <span>by TEMPLATED</span></a></div>
+    <div class="logo"><a href={{route('home.index')}}>Hielo <span>by a</span></a></div>
     <a href="#menu">Menu</a>
 </header>
 
