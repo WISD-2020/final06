@@ -22,9 +22,12 @@
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
-        <li><a href="index1.php">Home</a></li>
-        <li><a href="generic.php">Generic</a></li>
-        <li><a href="elements.php">Elements</a></li>
+        <li><a href={{route('home.index')}}>Home</a></li>
+        <li><a href={{route('generic.index')}}>Generic</a></li>
+        <li><a href={{route('elements.index')}}>Elements</a></li>
+        <li><a href={{route('login')}}>Login</a></li>
+        <li><a href={{route('register')}}>Register</a></li>
+        <li><a href={{route('register')}}>aar</a></li>
     </ul>
 </nav>
 

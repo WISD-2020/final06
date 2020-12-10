@@ -15,16 +15,18 @@
 
 <!-- Header -->
 <header id="header">
-    <div class="logo"><a href="index.html">Hielo <span>by TEMPLATED</span></a></div>
+    <div class="logo"><a href={{route('home.index')}}>Hielo <span>by TEMPLATED</span></a></div>
     <a href="#menu">Menu</a>
 </header>
 
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="generic.html">Generic</a></li>
-        <li><a href="elements.html">Elements</a></li>
+        <li><a href={{route('home.index')}}>Home</a></li>
+        <li><a href={{route('generic.index')}}>Generic</a></li>
+        <li><a href={{route('elements.index')}}>Elements</a></li>
+        <li><a href={{route('login')}}>Login</a></li>
+        <li><a href={{route('register')}}>Register</a></li>
     </ul>
 </nav>
 
