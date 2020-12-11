@@ -26,3 +26,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('/',[\App\Http\Controllers\HomeController::class,'index'])->name('home.index');//a
 Route::get('/elements',[\App\Http\Controllers\ElementsController::class,'index'])->name('elements.index');//b
 Route::get('/generic',[\App\Http\Controllers\GenericController::class,'index'])->name('generic.index');//c
+

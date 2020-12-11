@@ -27,6 +27,7 @@
         <li><a href={{route('elements.index')}}>Elements</a></li>
         <li><a href={{route('login')}}>Login</a></li>
         <li><a href={{route('register')}}>Register</a></li>
+        <li><a href={{route('register')}}>後台管理者登入</a></li>
     </ul>
 </nav>
 
