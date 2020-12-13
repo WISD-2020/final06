@@ -7,9 +7,40 @@ use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
-
+use Encore\Admin\Layout\Content;
+use Encore\Admin\Controllers\HasResourceActions;
 class UserController extends AdminController
 {
+    use HasResourceActions;
+    public function index(Content $content)
+    {
+        return $content
+            ->header('會員管理')
+            ->description('管理所有會員')
+            ->body($this->grid());
+    }
+    public function show($id, Content $content)
+    {
+        return $content
+            ->header($this->title)
+            ->description('description')
+            ->body($this->detail($id));
+    }
+    public function edit($id, Content $content)
+    {
+        return $content
+            ->header($this->title)
+            ->description('編輯')
+            ->body($this->form()->edit($id));
+    }
+    public function create(Content $content)
+    {
+        return $content
+            ->header($this->title)
+            ->description('description')
+            ->body($this->form());
+    }
+
     /**
      * Title for current resource.
      *
