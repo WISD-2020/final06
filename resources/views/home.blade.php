@@ -42,7 +42,7 @@
 <!-- Banner -->
 <section class="banner full">
     <article>
-        <img src="images/twa-4.jpg" alt="" />
+        <img src="images/museum1.jpg" alt="" />
         <div class="inner">
             <header>
 
@@ -50,7 +50,7 @@
         </div>
     </article>
     <article>
-        <img src="images/twa-2.jpg" alt="" />
+        <img src="images/museum2.jpg" alt="" />
         <div class="inner">
             <header>
 
@@ -58,7 +58,15 @@
         </div>
     </article>
     <article>
-        <img src="images/twa-7.jpg"  alt="" />
+        <img src="images/museum3.jpg"  alt="" />
+        <div class="inner">
+            <header>
+
+            </header>
+        </div>
+    </article>
+    <article>
+        <img src="images/museum4.jpg"  alt="" />
         <div class="inner">
             <header>
 
@@ -67,14 +75,6 @@
     </article>
     <article>
         <img src="images/3f-1.jpg"  alt="" />
-        <div class="inner">
-            <header>
-
-            </header>
-        </div>
-    </article>
-    <article>
-        <img src="images/slide05.jpg"  alt="" />
         <div class="inner">
             <header>
 
