@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Routing\Router;
-use App\Admin\Controllers\UsersController;
+use App\Admin\Controllers\UserController;
 Admin::routes();
 
 Route::group([
@@ -13,6 +13,6 @@ Route::group([
     function (Router $router) {
 
     $router->get('/', 'HomeController@index')->name('home');
-    Route::get('/users',[UsersController::class, 'index']);
+    Route::get('/users',[UserController::class, 'index']);
 
 });
