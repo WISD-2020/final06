@@ -41,7 +41,7 @@ class ProductController extends AdminController
             ->description('description')
             ->body($this->form());
     }
-    public function store(Request $request)
+   /* public function store(Request $request)
     {
         //
     }
@@ -50,7 +50,7 @@ class ProductController extends AdminController
     {
         //
     }
-
+*/
     /**
      * Title for current resource.
      *

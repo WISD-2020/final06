@@ -1,7 +1,34 @@
 <?php
 
 return [
-    'online'                => '在線',
+    "Login"=> "登入",
+    "Password"=>"密碼",
+    "Remember Me"=> "記住我",
+    "E-Mail Address"=> "電子郵件",
+    "Forgot Your Password?"=>"忘記密碼？",
+    "Verify Your Email Address"=> "驗證您的電子郵件地址",
+    "A fresh verification link has been sent to your email address."=> "新的驗證連結已發送到您的電子郵件地址",
+    "Before proceeding, please check your email for a verification link."=> "在繼續之前，請檢查您的電子郵件以獲取驗證鏈接。",
+    "If you did not receive the email"=>"如果您沒有收到該電子郵件",
+    "click here to request another"=>"點擊這裡申請另一個",
+    "Reset Password"=> "重設密碼",
+    "Send Password Reset Link"=> "寄送重設密碼連結",
+    "Confirm Password"=>"確認密碼",
+    "Toggle navigation"=> "縮放導覽工具",
+    "Register"=> "註冊",
+    "Name"=> "姓名",
+    "Logout"=> "登出",
+    "Address"=> "收貨地址",
+    "Tel"=> "聯絡電話",
+    "Id"=> "編號",
+    "Title"=> "商品名稱",
+    "Description"=>"商品說明",
+    "Image"=> "商品圖片",
+    "On sale"=>"是否上架",
+    "Price"=> "售價",
+    "Created at"=> "建立時間",
+    "Updated at"=> "更新時間",
+    'online' => '在線',
     'login'                 => '登錄',
     'logout'                => '登出',
     'setting'               => '設置',
@@ -71,6 +98,7 @@ return [
     'uri'                   => '路徑',
     'operation_log'         => '操作記錄',
     'parent_select_error'   => '父級選擇錯誤',
+
     'pagination'            => [
         'range' => '從 :first 到 :last ，總共 :total 條',
     ],
@@ -102,4 +130,5 @@ return [
     'prev'                   => '上一步',
     'next'                   => '下一步',
     'quick_create'           => '快速創建',
+
 ];
