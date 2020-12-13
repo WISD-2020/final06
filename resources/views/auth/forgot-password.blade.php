@@ -1,11 +1,11 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <div class="logo"><a href={{route('home.index')}}><img src="images/logo.png" width="300"></a></div>
         </x-slot>
 
         <div class="mb-4 text-sm text-gray-600">
-            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+            {{ __('忘記密碼了嗎？沒問題。只要讓我們知道您的Email，我們就會通過Email將密碼重置連結發送給您，該連結將使您可以選擇一個新的密碼。') }}
         </div>
 
         @if (session('status'))
@@ -26,7 +26,7 @@
 
             <div class="flex items-center justify-end mt-4">
                 <x-jet-button>
-                    {{ __('Email Password Reset Link') }}
+                    {{ __('Email密碼重置連結') }}
                 </x-jet-button>
             </div>
         </form>
