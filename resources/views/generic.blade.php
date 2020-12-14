@@ -22,11 +22,20 @@
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
-        <li><a href={{route('home.index')}}>Home</a></li>
-        <li><a href={{route('generic.index')}}>Generic</a></li>
-        <li><a href={{route('elements.index')}}>Elements</a></li>
-        <li><a href={{route('login')}}>Login</a></li>
-        <li><a href={{route('register')}}>Register</a></li>
+        <li><a href={{route('home.index')}}>首頁</a></li>
+        <li><font color="#fffafa">介紹</font></li>
+        <li><a href={{route('generic.index')}}>美術館歷史</a></li>
+        <li><a href={{route('elements.index')}}>內部樓層</a></li>
+        <li><a href={{route('elements.index')}}>周遭景點</a></li>
+        <li><font color="#fffafa">預約</font></li>
+        <li><a href={{route('elements.index')}}>參訪路線</a></li>
+        <li><a href={{route('elements.index')}}>預約參訪</a></li>
+        <li><font color="#fffafa">留言</font></li>
+        <li><a href={{route('elements.index')}}>留言板</a></li>
+        <li><font color="#fffafa">會員/管理員</font></li>
+        <li><a href={{route('login')}}>登入</a></li>
+        <li><a href={{route('register')}}>註冊</a></li>
+        <li><a href="http://localhost:8000/admin">管理員登入</a></li>
     </ul>
 </nav>
 
