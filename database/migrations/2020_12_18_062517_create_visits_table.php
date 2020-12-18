@@ -17,7 +17,7 @@ class CreateVisitsTable extends Migration
             $table->increments('id');
             $table->integer('people_id');
             $table->date('date');//參訪日期
-            $table->Time('period');//參訪時段
+            $table->string('period');//參訪時段
             $table->integer('commentator_id');
             $table->integer('way_id');
         });

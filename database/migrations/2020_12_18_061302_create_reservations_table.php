@@ -16,7 +16,7 @@ class CreateReservationsTable extends Migration
         Schema::create('reservations', function (Blueprint $table) {//管理員給出預約結果，會員查看
             $table->increments('id');
             $table->date('date');//預約日期
-            $table->Time('period');//預約時段
+            $table->string('period');//預約時段
             $table->string('result');//預約結果：成功/失敗
             $table->integer('people_id');
             $table->integer('visit_id');
