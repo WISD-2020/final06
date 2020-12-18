@@ -44,12 +44,12 @@
         <div class="gallery">
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-1-1.jpg" alt="" /></a>
+                    <img src="images/w1-1-1.jpg" alt="" />
                 </div>
             </div>
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-1-2.jpg" alt="" /></a>
+                    <img src="images/w1-1-2.jpg" alt="" />
                 </div>
             </div>
         </div>
@@ -64,12 +64,12 @@
         <div class="gallery">
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-2-1.jpg" alt="" /></a>
+                    <img src="images/w1-2-1.jpg" alt="" />
                 </div>
             </div>
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-2-2.jpg" alt="" /></a>
+                    <img src="images/w1-2-2.jpg" alt="" />
                 </div>
             </div>
         </div>
@@ -84,12 +84,12 @@
         <div class="gallery">
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-3-1.jpg" alt="" /></a>
+                    <img src="images/w1-3-1.jpg" alt="" />
                 </div>
             </div>
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-3-2.jpg" alt="" /></a>
+                    <img src="images/w1-3-2.jpg" alt="" />
                 </div>
             </div>
         </div>
@@ -104,12 +104,12 @@
         <div class="gallery">
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-4-1.jpg" alt="" /></a>
+                    <img src="images/w1-4-1.jpg" alt="" />
                 </div>
             </div>
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-4-2.jpg" alt="" /></a>
+                    <img src="images/w1-4-2.jpg" alt="" />
                 </div>
             </div>
         </div>
@@ -124,12 +124,12 @@
         <div class="gallery">
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-5-1.jpg" alt="" /></a>
+                    <img src="images/w1-5-1.jpg" alt="" />
                 </div>
             </div>
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-5-2.jpg" alt="" /></a>
+                    <img src="images/w1-5-2.jpg" alt="" />
                 </div>
             </div>
         </div>
@@ -144,12 +144,12 @@
         <div class="gallery">
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-6-1.jpg" alt="" /></a>
+                    <img src="images/w1-6-1.jpg" alt="" />
                 </div>
             </div>
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-6-2.jpg" alt="" /></a>
+                    <img src="images/w1-6-2.jpg" alt="" />
                 </div>
             </div>
         </div>
@@ -164,12 +164,12 @@
         <div class="gallery">
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-7-1.jpg" alt="" /></a>
+                    <img src="images/w1-7-1.jpg" alt="" />
                 </div>
             </div>
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-7-2.jpg" alt="" /></a>
+                    <img src="images/w1-7-2.jpg" alt="" />
                 </div>
             </div>
         </div>
@@ -184,12 +184,12 @@
         <div class="gallery">
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-8-1.jpg" alt="" /></a>
+                    <img src="images/w1-8-1.jpg" alt="" />
                 </div>
             </div>
             <div>
                 <div class="image fit">
-                    <a href="#"><img src="images/w1-8-2.jpg" alt="" /></a>
+                    <img src="images/w1-8-2.jpg" alt="" />
                 </div>
             </div>
         </div>
