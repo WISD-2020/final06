@@ -27,3 +27,5 @@ Route::get('/',[\App\Http\Controllers\HomeController::class,'index'])->name('hom
 Route::get('/elements',[\App\Http\Controllers\ElementsController::class,'index'])->name('elements.index');//b
 Route::get('/generic',[\App\Http\Controllers\GenericController::class,'index'])->name('generic.index');//c
 
+Route::get('/ways',[\App\Http\Controllers\WaysController::class,'index'])->name('ways.index');//參訪路線
+
