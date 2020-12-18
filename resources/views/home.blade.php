@@ -74,7 +74,7 @@
         </div>
     </article>
     <article>
-        <img src="images/3f-1.jpg"  alt="" />
+        <img src="images/museum5.jpg"  alt="" />
         <div class="inner">
             <header>
 
@@ -91,16 +91,15 @@
             <div>
                 <div class="box">
                     <div class="image fit">
-                        <img src="images/pic02.jpg" alt="" />
+                        <img src="images/history.jpg" alt="" />
                     </div>
                     <div class="content">
                         <header class="align-center">
 
                             <h2>美術館歷史</h2>
                         </header>
-                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
                         <footer class="align-center">
-                            <a href="{{route('generic.index')}}" class="button alt">Learn More</a>
+                            <a href="{{route('generic.index')}}" class="button alt">More</a>
                         </footer>
                     </div>
                 </div>
@@ -108,15 +107,14 @@
             <div>
                 <div class="box">
                     <div class="image fit">
-                        <img src="images/pic02.jpg" alt="" />
+                        <img src="images/in.jpg" alt="" />
                     </div>
                     <div class="content">
                         <header class="align-center">
                             <h2>美術館內部樓層</h2>
                         </header>
-                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
                         <footer class="align-center">
-                            <a href="{{route('generic.index')}}" class="button alt">Learn More</a>
+                            <a href="{{route('generic.index')}}" class="button alt">More</a>
                         </footer>
                     </div>
                 </div>
@@ -124,15 +122,14 @@
             <div>
                 <div class="box">
                     <div class="image fit">
-                        <img src="images/pic03.jpg" alt="" />
+                        <img src="images/out.jpg" alt="" />
                     </div>
                     <div class="content">
                         <header class="align-center">
                             <h2>美術館周遭景點</h2>
                         </header>
-                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
                         <footer class="align-center">
-                            <a href="{{route('generic.index')}}" class="button alt">Learn More</a>
+                            <a href="{{route('generic.index')}}" class="button alt">More</a>
                         </footer>
                     </div>
                 </div>
