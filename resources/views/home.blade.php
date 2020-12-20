@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
 <head>
     <title>國家美術館</title>
@@ -24,7 +19,7 @@
     <ul class="links">
         <li><a href={{route('home.index')}}>首頁</a></li>
         <li><font color="#fffafa">介紹</font></li>
-        <li><a href={{route('generic.index')}}>美術館歷史</a></li>
+        <li><a href={{route('history.index')}}>美術館歷史</a></li>
         <li><a href={{route('elements.index')}}>內部樓層</a></li>
         <li><a href={{route('elements.index')}}>周遭景點</a></li>
         <li><font color="#fffafa">預約</font></li>
