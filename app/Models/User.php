@@ -28,6 +28,10 @@ class User extends Authenticatable
         'email',
         'password',
     ];
+    public function boards()
+    {
+        return $this->hasMany(Board::class);
+    }
 
     /**
      * The attributes that should be hidden for arrays.
