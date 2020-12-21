@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
 <head>
     <title>國家美術館</title>
@@ -24,11 +19,11 @@
     <ul class="links">
         <li><a href={{route('home.index')}}>首頁</a></li>
         <li><font color="#fffafa">介紹</font></li>
-        <li><a href={{route('generic.index')}}>美術館歷史</a></li>
-        <li><a href={{route('elements.index')}}>內部樓層</a></li>
-        <li><a href={{route('elements.index')}}>周遭景點</a></li>
+        <li><a href={{route('history.index')}}>美術館歷史</a></li>
+        <li><a href={{route('internal.index')}}>內部樓層</a></li>
+        <li><a href={{route('external.index')}}>周遭景點</a></li>
         <li><font color="#fffafa">預約</font></li>
-        <li><a href={{route('elements.index')}}>參訪路線</a></li>
+        <li><a href={{route('ways.index')}}>參訪路線</a></li>
         <li><a href={{route('elements.index')}}>預約參訪</a></li>
         <li><font color="#fffafa">留言</font></li>
         <li><a href={{route('elements.index')}}>留言板</a></li>
@@ -74,7 +69,7 @@
         </div>
     </article>
     <article>
-        <img src="images/3f-1.jpg"  alt="" />
+        <img src="images/museum5.jpg"  alt="" />
         <div class="inner">
             <header>
 
@@ -91,16 +86,15 @@
             <div>
                 <div class="box">
                     <div class="image fit">
-                        <img src="images/pic02.jpg" alt="" />
+                        <img src="images/history.jpg" alt="" />
                     </div>
                     <div class="content">
                         <header class="align-center">
 
                             <h2>美術館歷史</h2>
                         </header>
-                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
                         <footer class="align-center">
-                            <a href="{{route('generic.index')}}" class="button alt">Learn More</a>
+                            <a href="{{route('generic.index')}}" class="button alt">More</a>
                         </footer>
                     </div>
                 </div>
@@ -108,15 +102,14 @@
             <div>
                 <div class="box">
                     <div class="image fit">
-                        <img src="images/pic02.jpg" alt="" />
+                        <img src="images/in.jpg" alt="" />
                     </div>
                     <div class="content">
                         <header class="align-center">
                             <h2>美術館內部樓層</h2>
                         </header>
-                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
                         <footer class="align-center">
-                            <a href="{{route('generic.index')}}" class="button alt">Learn More</a>
+                            <a href="{{route('generic.index')}}" class="button alt">More</a>
                         </footer>
                     </div>
                 </div>
@@ -124,15 +117,14 @@
             <div>
                 <div class="box">
                     <div class="image fit">
-                        <img src="images/pic03.jpg" alt="" />
+                        <img src="images/out.jpg" alt="" />
                     </div>
                     <div class="content">
                         <header class="align-center">
                             <h2>美術館周遭景點</h2>
                         </header>
-                        <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
                         <footer class="align-center">
-                            <a href="{{route('generic.index')}}" class="button alt">Learn More</a>
+                            <a href="{{route('generic.index')}}" class="button alt">More</a>
                         </footer>
                     </div>
                 </div>
