@@ -1,38 +1,6 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>預約參訪</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-</head>
-<body>
-<!-- Header -->
-<header id="header" class="alt">
-    <div class="logo"><a href={{route('home.index')}}><img src="images/logo.png" width="200"></a></div>
-    <a href="#menu">Menu</a>
-</header>
-
-<!-- Nav -->
-<nav id="menu">
-    <ul class="links">
-        <li><a href={{route('home.index')}}>首頁</a></li>
-        <li><font color="#fffafa">介紹</font></li>
-        <li><a href={{route('history.index')}}>美術館歷史</a></li>
-        <li><a href={{route('internal.index')}}>內部樓層</a></li>
-        <li><a href={{route('external.index')}}>周遭景點</a></li>
-        <li><font color="#fffafa">預約</font></li>
-        <li><a href={{route('ways.index')}}>參訪路線</a></li>
-        <li><a href={{route('reservation.index')}}>預約參訪</a></li>
-        <li><font color="#fffafa">留言</font></li>
-        <li><a href={{route('elements.index')}}>留言板</a></li>
-        <li><font color="#fffafa">會員/管理員</font></li>
-        <li><a href={{route('login')}}>登入</a></li>
-        <li><a href={{route('register')}}>註冊</a></li>
-        <li><a href="http://localhost:8000/admin">管理員登入</a></li>
-    </ul>
-</nav>
-
+@extends('layouts.master')
+@section('title','預約參訪')
+@section('content')
 <!-- One -->
 <section id="One" class="wrapper style3">
     <div class="inner">
@@ -70,20 +38,46 @@
 
 {{--營業時間：星期一公休，星期二到五12.~18.，星期六10.~20.，星期日10.~18.--}}
             <h3><strong>選擇參訪時段</strong></h3>
-{{--            @if(string ($date)='一')--}}
+            @if($date='一')
+    {{--                    星期一--}}
+    <p>每周一公休，請選擇其他日期。</p>
+            @elseif($date='二' || '三' || '四' || '五')
+    {{--                    星期二到五--}}
                 <select name="period" id="period" class="span5" style="width:20%">
-                <option>請選擇時段</option>
-                <option value="10:00-12:00">時段1：10:00-12:00</option>
-                <option value="11:00-13:00">時段2：11:00-13:00</option>
-                <option value="12:00-14:00">時段3：12:00-14:00</option>
-                <option value="13:00-15:00">時段4：13:00-15:00</option>
-                <option value="14:00-16:00">時段5：14:00-16:00</option>
-                <option value="15:00-17:00">時段6：15:00-17:00</option>
-                <option value="16:00-18:00">時段7：16:00-18:00</option>
-                <option value="17:00-19:00">時段8：17:00-19:00</option>
-                <option value="18:00-20:00">時段9：18:00-20:00</option>
-{{--            @endif--}}
-            </select>
+                    <option>請選擇時段</option>
+                    <option value="12:00-14:00">時段1：12:00-14:00</option>
+                    <option value="13:00-15:00">時段2：13:00-15:00</option>
+                    <option value="14:00-16:00">時段3：14:00-16:00</option>
+                    <option value="15:00-17:00">時段4：15:00-17:00</option>
+                    <option value="16:00-18:00">時段5：16:00-18:00</option>
+                </select>
+            @elseif($date='六')
+    {{--                    星期六--}}
+                <select name="period" id="period" class="span5" style="width:20%">
+                    <option>請選擇時段</option>
+                    <option value="10:00-12:00">時段1：10:00-12:00</option>
+                    <option value="11:00-13:00">時段2：11:00-13:00</option>
+                    <option value="12:00-14:00">時段3：12:00-14:00</option>
+                    <option value="13:00-15:00">時段4：13:00-15:00</option>
+                    <option value="14:00-16:00">時段5：14:00-16:00</option>
+                    <option value="15:00-17:00">時段6：15:00-17:00</option>
+                    <option value="16:00-18:00">時段7：16:00-18:00</option>
+                    <option value="17:00-19:00">時段8：17:00-19:00</option>
+                    <option value="18:00-20:00">時段9：18:00-20:00</option>
+                </select>
+            @elseif($date='日')
+    {{--                    星期日--}}
+                <select name="period" id="period" class="span5" style="width:20%">
+                    <option>請選擇時段</option>
+                    <option value="10:00-12:00">時段1：10:00-12:00</option>
+                    <option value="11:00-13:00">時段2：11:00-13:00</option>
+                    <option value="12:00-14:00">時段3：12:00-14:00</option>
+                    <option value="13:00-15:00">時段4：13:00-15:00</option>
+                    <option value="14:00-16:00">時段5：14:00-16:00</option>
+                    <option value="15:00-17:00">時段6：15:00-17:00</option>
+                    <option value="16:00-18:00">時段7：16:00-18:00</option>
+            @endif
+                </select>
             <br><br>
 
             <h3><strong>選擇參訪路線</strong></h3>
@@ -114,14 +108,5 @@
                 <li><a href="#" class="button special">送出</a></li>
             </ul>
 </div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
-</body>
-</html>
+@endsection
 
