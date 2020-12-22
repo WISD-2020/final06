@@ -68,7 +68,7 @@
         <li><a href={{route('external.index')}}>周遭景點</a></li>
         <li><font color="#fffafa">預約</font></li>
         <li><a href={{route('ways.index')}}>參訪路線</a></li>
-        <li><a href={{route('elements.index')}}>預約參訪</a></li>
+        <li><a href={{route('reservation.index')}}>預約參訪</a></li>
         <li><font color="#fffafa">留言</font></li>
         <li><a href={{route('elements.index')}}>留言板</a></li>
         <li><font color="#fffafa">會員/管理員</font></li>

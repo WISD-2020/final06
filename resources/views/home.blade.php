@@ -24,7 +24,7 @@
         <li><a href={{route('external.index')}}>周遭景點</a></li>
         <li><font color="#fffafa">預約</font></li>
         <li><a href={{route('ways.index')}}>參訪路線</a></li>
-        <li><a href={{route('elements.index')}}>預約參訪</a></li>
+        <li><a href={{route('reservation.index')}}>預約參訪</a></li>
         <li><font color="#fffafa">留言</font></li>
         <li><a href={{route('elements.index')}}>留言板</a></li>
         <li><font color="#fffafa">會員/管理員</font></li>
@@ -94,7 +94,7 @@
                             <h2>美術館歷史</h2>
                         </header>
                         <footer class="align-center">
-                            <a href="{{route('generic.index')}}" class="button alt">More</a>
+                            <a href="{{route('history.index')}}" class="button alt">More</a>
                         </footer>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                             <h2>美術館內部樓層</h2>
                         </header>
                         <footer class="align-center">
-                            <a href="{{route('generic.index')}}" class="button alt">More</a>
+                            <a href="{{route('internal.index')}}" class="button alt">More</a>
                         </footer>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                             <h2>美術館周遭景點</h2>
                         </header>
                         <footer class="align-center">
-                            <a href="{{route('generic.index')}}" class="button alt">More</a>
+                            <a href="{{route('external.index')}}" class="button alt">More</a>
                         </footer>
                     </div>
                 </div>
