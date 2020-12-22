@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Routing\Router;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\MessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,4 +38,10 @@ Route::get('/ways',[\App\Http\Controllers\WaysController::class,'index'])->name(
 Route::get('/way1',[\App\Http\Controllers\Way1Controller::class,'index'])->name('way1.index');//參訪路線1
 Route::get('/way2',[\App\Http\Controllers\Way2Controller::class,'index'])->name('way2.index');//參訪路線2
 Route::get('/way3',[\App\Http\Controllers\Way3Controller::class,'index'])->name('way3.index');//參訪路線3
+
+
+Route::get('/messages', [MessageController::class,'index']);
+Route::post('/message', [MessageController::class,'store']);
+Route::delete('/message/{message}', [MessageController::class,'destroy']);
+
 
