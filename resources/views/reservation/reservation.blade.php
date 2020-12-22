@@ -84,21 +84,21 @@
             <dl>
                 <dt><div class="4u 12u$(small)">
                     <input type="radio" id="way1" name="way">
-                    <label for="way1">路線 1</label>
+                        <label for="way1"><font color="#ae00ae">親子路線</font></label>
                 </div></dt>
                 <dd>
                     <p>①數位藝術方舟➜②兒童繪本區➜③下凹庭院➜④春水堂➜⑤時光天井➜⑥兒童遊戲室➜⑦影音藝術廳➜⑧碑林廣場</p>
                 </dd>
                 <dt><div class="4u 12u$(small)">
                     <input type="radio" id="way2" name="way">
-                    <label for="way2">路線 2</label>
+                        <label for="way2"><font color="#ae00ae">藝術路線</font></label>
                     </div></dt>
                 <dd>
                     <p>①演講廳➜②美術街➜③時光天井➜④竹林天井➜⑤古典玫瑰園➜⑥影音藝術廳➜⑦研習教室➜⑧展覽室➜⑨精品店</p>
                 </dd>
                 <dt><div class="4u 12u$(small)">
                     <input type="radio" id="way3" name="way">
-                    <label for="way3">路線 3</label>
+                        <label for="way3"><font color="#ae00ae">散心路線</font></label>
                 </div></dt>
                 <dd>
                     <p>①資料中心➜②展覽室➜③古典玫瑰園➜④美術街➜⑤E亭</p>
