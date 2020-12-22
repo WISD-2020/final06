@@ -1,38 +1,6 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>國家美術館歷史</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-</head>
-<body>
-<!-- Header -->
-<header id="header" class="alt">
-    <div class="logo"><a href={{route('home.index')}}><img src="images/logo.png" width="200"></a></div>
-    <a href="#menu">Menu</a>
-</header>
-
-<!-- Nav -->
-<nav id="menu">
-    <ul class="links">
-        <li><a href={{route('home.index')}}>首頁</a></li>
-        <li><font color="#fffafa">介紹</font></li>
-        <li><a href={{route('history.index')}}>美術館歷史</a></li>
-        <li><a href={{route('internal.index')}}>內部樓層</a></li>
-        <li><a href={{route('external.index')}}>周遭景點</a></li>
-        <li><font color="#fffafa">預約</font></li>
-        <li><a href={{route('ways.index')}}>參訪路線</a></li>
-        <li><a href={{route('elements.index')}}>預約參訪</a></li>
-        <li><font color="#fffafa">留言</font></li>
-        <li><a href={{route('elements.index')}}>留言板</a></li>
-        <li><font color="#fffafa">會員/管理員</font></li>
-        <li><a href={{route('login')}}>登入</a></li>
-        <li><a href={{route('register')}}>註冊</a></li>
-        <li><a href="http://localhost:8000/admin">管理員登入</a></li>
-    </ul>
-</nav>
-
+@extends('layouts.master')
+@section('title','國家美術館歷史')
+@section('content')
 <!-- One -->
 <section id="One" class="wrapper style3">
     <div class="inner">
@@ -54,34 +22,15 @@
                 <form action="">
                     <table align="center">
                         <tr>
-                            <td>區域</td>
-                            <td>樓層</td>
-                            <td>介紹</td>
+                            <td width="15%" align="center">開始日期</td>
+                            <td width="15%" align="center">結束日期</td>
+                            <td width="15%" align="center">內容</td>
                         </tr>
-<!--                        --><?php
-//                        //echo $re;
-//                        //將欄位變成一個個陣列
-//                        $k=0;
-//                        while($row=$re-> fetch_assoc())
-//                        {
-//                            $t_date[]=$row["date"];
-//                            // echo count($g_id);
-//                            $t_enddate[]=$row["enddate"];
-//                            $t_text[]=$row["text"];
-//                            $k=$k+1;
-//
-//                        }
-//                        //echo $k;
-//                        for ($i=0; $i < $k ; $i++) {
-//                            # code...
-//                            echo "<tr>
-//				                        <td>".$t_date[$i]."</td>
-//				                        <td>".$t_enddate[$i]."</td>
-//				                        <td>".$t_text[$i]."</td>
-//    			                        </tr>
-//				                        ";
-//                      }
-//                        ?>
+{{--                        <tr>--}}
+{{--                            <td width="15%" align="center">{{Auth::museum_histories()->date}}</td>--}}
+{{--                            <td width="15%" align="center">{{Auth::museum_histories()->end_date}}</td>--}}
+{{--                            <td>{{Auth::museum_histories()->text}}</td>--}}
+{{--                        </tr>--}}
 
                     </table>
                 </form>
@@ -90,13 +39,4 @@
         </div>
     </div>
 </section>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
-</body>
-</html>
+@endsection
