@@ -1,4 +1,4 @@
-@extends('layouts.b')
+@extends('layouts.c')
 
 @section('content')
 
@@ -14,11 +14,15 @@
 
         <!-- 留言內容 -->
             <div class="form-group">
-                <label for="message-name" class="col-sm-3 control-label">請輸入</label>
+                <label for="message-name" class="col-sm-3 control-label">請輸入留言</label>
 
                 <div class="col-sm-6">
                     <input type="text" name="name" id="message-name" class="form-control">
                 </div>
+
+            </div>
+            <div class="col-sm-6">
+                <input type="text" name="id" id="message-name" class="form-control">
             </div>
 
             <!-- 增加留言按鈕-->
@@ -37,7 +41,7 @@
     @if (count($messages) > 0)
         <div class="panel panel-default">
             <div class="panel-heading">
-                Current Messages
+
             </div>
 
             <div class="panel-body">
@@ -45,7 +49,7 @@
 
                     <!-- 表頭 -->
                     <thead>
-                    <th>Content</th>
+                    <th>留言</th>
                     <th>&nbsp;</th>
                     </thead>
 
