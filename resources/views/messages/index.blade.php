@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.b')
 
 @section('content')
 
@@ -61,8 +61,8 @@
 
                             <td>
                                 <form action="/message/{{ $message->id }}" method="POST">
-                                    {csrf_field()}
-                                    { method_field('DELETE')}
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
 
                                     <button type="submit" id="delete-message-{{ $message->id }}" class="btn btn-danger">
                                         <i class="fa fa-btn fa-trash"></i>Delete
