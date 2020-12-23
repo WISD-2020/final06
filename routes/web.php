@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Routing\Router;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\MessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,4 +43,10 @@ Route::post('/visits',[\App\Http\Controllers\VisitsController::class,'store'])->
 
 
 Route::get('/sendmail',[\App\Http\Controllers\MailController::class,'send']);//email
+
+
+Route::get('/messages', [MessageController::class,'index']);
+Route::post('/message', [MessageController::class,'store']);
+Route::delete('/message/{message}', [MessageController::class,'destroy']);
+
 
