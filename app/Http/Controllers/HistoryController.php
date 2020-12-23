@@ -3,11 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
+use App\Http\Requests;
+use App\Models\Message;
+use App\Repositories\MessageRepository;
+use App\Http\Controllers\Controller;
 use App\Models\History;
 class HistoryController extends Controller
 {
+
     public function index()
     {
+
         //$his= Auth::museum_histories()->get();
         //$his= DB::table('museum_histories')->get();
 //        foreach (History::all() as $history) {
@@ -26,6 +33,7 @@ class HistoryController extends Controller
                 echo "</tr>";
             }
         });
+
 
         return view('introduction/history');
 

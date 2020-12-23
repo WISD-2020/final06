@@ -17,6 +17,10 @@ class CreateMessagesTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->index(); // 新增
             $table->string('name'); // 新增
+            $table->integer('user_id')->index();//會員id
+            $table->string('user_name');//會員姓名
+            $table->string('title');//留言標題
+            $table->string('content');//留言內容
             $table->timestamps();
         });
     }

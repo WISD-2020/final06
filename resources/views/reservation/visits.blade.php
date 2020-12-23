@@ -38,12 +38,11 @@
     <form action="{{route('visits.store')}}" method="POST" role="form">
         @method('POST')
         @csrf
-{{--    @foreach($posts as $post)--}}
-{{--        <tr><td><div>{{ $post->title }}</div></td></tr>--}}
-{{--    @endforeach--}}
-
+        {{--    @foreach($posts as $post)--}}
+        {{--        <tr><td><div>{{ $post->title }}</div></td></tr>--}}
+        {{--    @endforeach--}}
             <h3><strong>選擇參訪時段</strong></h3>
-                 <select name="period" id="period" class="span5" style="width:20%">
+                <select name="period" id="period" class="span5" style="width:20%">
                     <option>請選擇時段</option>
                     <option value="10:00-12:00">時段1：10:00-12:00</option>
                     <option value="11:00-13:00">時段2：11:00-13:00</option>
@@ -52,7 +51,7 @@
                     <option value="14:00-16:00">時段5：14:00-16:00</option>
                     <option value="15:00-17:00">時段6：15:00-17:00</option>
                     <option value="16:00-18:00">時段7：16:00-18:00</option>
-                 </select>
+                </select>
             <br><br>
 
             <h3><strong>選擇參訪路線</strong></h3>
@@ -67,7 +66,7 @@
                 <dt><div class="4u 12u$(small)">
                     <input type="radio" id="way2" name="way_id" value="2">
                         <label for="way2"><font color="#ae00ae">藝術路線</font></label>
-                    </div></dt>
+                </div></dt>
                 <dd>
                     <p>①演講廳➜②美術街➜③時光天井➜④竹林天井➜⑤古典玫瑰園➜⑥影音藝術廳➜⑦研習教室➜⑧展覽室➜⑨精品店</p>
                 </dd>
