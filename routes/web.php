@@ -39,3 +39,5 @@ Route::get('/way2',[\App\Http\Controllers\Way2Controller::class,'index'])->name(
 Route::get('/way3',[\App\Http\Controllers\Way3Controller::class,'index'])->name('way3.index');//參訪路線3
 Route::get('/reservation',[\App\Http\Controllers\ReservationController::class,'index'])->name('reservation.index');//預約參訪
 
+Route::get('/sendmail',[\App\Http\Controllers\MailController::class,'send']);//email
+
