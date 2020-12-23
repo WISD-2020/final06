@@ -37,7 +37,9 @@ Route::get('/ways',[\App\Http\Controllers\WaysController::class,'index'])->name(
 Route::get('/way1',[\App\Http\Controllers\Way1Controller::class,'index'])->name('way1.index');//參訪路線1
 Route::get('/way2',[\App\Http\Controllers\Way2Controller::class,'index'])->name('way2.index');//參訪路線2
 Route::get('/way3',[\App\Http\Controllers\Way3Controller::class,'index'])->name('way3.index');//參訪路線3
-Route::get('/reservation',[\App\Http\Controllers\ReservationController::class,'index'])->name('reservation.index');//預約參訪
+Route::get('/visits',[\App\Http\Controllers\VisitsController::class,'index'])->name('visits.index');//預約參訪
+Route::post('/visits',[\App\Http\Controllers\VisitsController::class,'store'])->name('visits.store');//儲存預約參訪
+
 
 Route::get('/sendmail',[\App\Http\Controllers\MailController::class,'send']);//email
 
