@@ -63,4 +63,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Message::class);
     }
+
+    public function visits()
+    {
+        return $this->hasMany(Visits::class);
+    }
+
 }

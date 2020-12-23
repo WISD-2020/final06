@@ -26,5 +26,10 @@ class Visits extends Model
         'period' => 'string',
         'way_id' => 'integer',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
 
