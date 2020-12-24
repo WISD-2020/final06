@@ -23,10 +23,6 @@
 
                 @if (count($museum_histories) > 0)
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-
-                        </div>
-
                         <div class="panel-body">
                             <center>
                                 <table class="table table-striped message-table" style="width:80%">

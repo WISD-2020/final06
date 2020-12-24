@@ -52,10 +52,6 @@
     <!-- 顯示目前留言 -->
     @if (count($messages) > 0)
         <div class="panel panel-default">
-            <div class="panel-heading">
-
-            </div>
-
             <div class="panel-body">
                 <center>
                 <table class="table table-striped message-table" style="width:60%">
