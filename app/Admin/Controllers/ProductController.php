@@ -41,12 +41,15 @@ class ProductController extends AdminController
             ->description('description')
             ->body($this->form());
     }
-   /* public function store(Request $request)
+   /*public function store(Content $content)
     {
-        //
+        return $content
+            ->header($this->title)
+            ->description('description')
+            ->body($this->form());
     }
 
-    public function update(Request $request, Content $content)
+    /*public function update(Request $request, Content $content)
     {
         //
     }

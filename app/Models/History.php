@@ -12,3 +12,4 @@ class History extends Model
     public $timestamps = false;
 
 }
+

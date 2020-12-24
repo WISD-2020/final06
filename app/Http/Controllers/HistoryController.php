@@ -19,6 +19,9 @@ class HistoryController extends Controller
         return view('introduction/history',['museum_histories' => $posts]);
 
 
+
+
+
         //$his= Auth::museum_histories()->get();
         //$his= DB::table('museum_histories')->get();
 //        foreach (History::all() as $history) {

@@ -41,6 +41,7 @@ Route::get('/way3',[\App\Http\Controllers\Way3Controller::class,'index'])->name(
 Route::get('/visits',[\App\Http\Controllers\VisitsController::class,'index'])->name('visits.index');//預約參訪
 Route::post('/visits',[\App\Http\Controllers\VisitsController::class,'store'])->name('visits.store');//儲存預約參訪
 
+Route::get('/sendmail',[\App\Http\Controllers\MailController::class,'send']);//email
 
 Route::get('/sendmail',[\App\Http\Controllers\MailController::class,'send']);//email
 
