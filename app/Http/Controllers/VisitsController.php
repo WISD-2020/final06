@@ -3,27 +3,44 @@
 namespace App\Http\Controllers;
 
 use App\Models\Visits;
+use App\Repositories\VisitRepository;
 use Illuminate\Http\Request;
+use App\Http\Requests;
 
 class VisitsController extends Controller
 {
-    public function index()
+    public function __construct(VisitRepository $visits)
     {
-        $posts = Visits::orderBy('id', 'DESC')->get();
-        $data = ['posts' => $posts];
-        return view('reservation.visits', $data);
+        $this->middleware('auth');
+        $this->visits = $visits;
+    }
+    public function index(Request $request)
+    {
+        $visits = Visits::where('user_id', $request->user()->id)->get();
+
+        //$messages = Message::where('user_name', $request->user()->name)->get();
+        return view('reservation.visits', [
+            'visits' => $visits,
+        ]);
     }
 
     public function store(Request $request)
     {
-        $post = Visits::create($request->all());
+        $this->validate($request, [
+            'date' => 'required',
+            'period' => 'required',
+            'way_id'=> 'required',
+
+
+        ]);
+        $request->user()->visits()->create($request->all());
 
 //        $post = $request->except('date', 'period', 'way_id');
 
 //        $date = $request->input('date');
 //        $period = $request->input('period');
 //        $way_id = $request->input('way_id');
-        return redirect()->route('reservation.visits');
+        return redirect()->route('/visits');
 
     }
 }
