@@ -10,7 +10,7 @@
         </header>
     </div>
 </section>
-
+@include('common.errors')
 <!-- Main -->
 <div id="main" class="container">
 
@@ -27,14 +27,14 @@
 {{--        var week  = day_list[day];--}}
 {{--    echo "</script>";--}}
 
-<!--    --><?php
-//    $reservation_date=$_POST["reservation_date"];
-//    function get_chinese_weekday($reservation_date)
-//    {
-//        $weekday = date('w', strtotime($reservation_date));
-//        return ['日', '一', '二', '三', '四', '五', '六'][$weekday];
-//    }
-//    ?>
+{{--<!--    -->--}}
+{{--//    $reservation_date=$_POST["reservation_date"];--}}
+{{--//    function get_chinese_weekday($reservation_date)--}}
+{{--//    {--}}
+{{--//        $weekday = date('w', strtotime($reservation_date));--}}
+{{--//        return ['日', '一', '二', '三', '四', '五', '六'][$weekday];--}}
+{{--//    }--}}
+{{--//--}}
     <form action="{{route('visits.store')}}" method="POST" role="form">
         {{ method_field('POST') }}
         {{ csrf_field() }}
@@ -78,9 +78,14 @@
                     <p>①資料中心➜②展覽室➜③古典玫瑰園➜④美術街➜⑤E亭</p>
                 </dd>
             </dl>
-            <ul class="actions">
-                <li><button type="submit" class="button special">送出</button></li>
-            </ul>
+        <!-- 送出按鈕 -->
+        <tr>
+            <td colspan="2" align="center">　
+                <button type="submit" class="button special">
+                    <i class="fa fa-plus"></i>送出
+                </button>
+            </td>
+        </tr>
     </form>
 </div>
 @endsection
