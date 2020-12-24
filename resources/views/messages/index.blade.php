@@ -53,7 +53,7 @@
 
                     <!-- 表頭 -->
                     <thead>
-                    <th>留言</th>
+                    <th>會員id</th>
                     <th>標題</th>
                     <th>內容</th>
                     <th>留言時間</th>
@@ -65,7 +65,7 @@
                         <tr>
                             <!-- Message Name -->
                             <td class="table-text">
-                                <div>{{ $message->user_name }}</div>
+                                <div>{{ $message->user_id }}</div>
                             </td>
 
                             <td class="table-text">
