@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Message extends Model
 {
     use HasFactory;
-    protected $fillable = ['name']; // 新增
+    protected $table = 'messages';
+    protected $fillable = [
+        'title',
+        'content',
+    ]; // 新增
 
     public function user()
     {
