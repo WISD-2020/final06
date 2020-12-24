@@ -54,7 +54,9 @@
                     <!-- 表頭 -->
                     <thead>
                     <th>留言</th>
-                    <th>&nbsp;</th>
+                    <th>標題</th>
+                    <th>內容</th>
+                    <th>留言時間</th>
                     </thead>
 
                     <!-- 表身 -->

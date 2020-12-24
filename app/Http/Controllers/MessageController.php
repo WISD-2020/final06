@@ -18,8 +18,8 @@ class MessageController extends Controller
     public function index(Request $request)
     {
         //$messages = $request->user()->messages()->get();
-        //$messages = Message::where('user_id', $request->user()->id)->get();
-        $messages = Message::where('user_name', $request->user()->name)->get();
+        $messages = Message::where('user_id', $request->user()->id)->get();
+        //$messages = Message::where('user_name', $request->user()->name)->get();
         return view('messages.index', [
             'messages' => $messages,
         ]);
@@ -31,12 +31,12 @@ class MessageController extends Controller
             'content' => 'required|max:255',
 
         ]);
-        //$request->user()->messages()->create($request->all());
-          $request->user()->messages()->create([
-          'title' => $request->title,
-              'content' => $request->content,
-              'name' => $request->name,
-        ]);
+        $request->user()->messages()->create($request->all());
+//          $request->user()->messages()->create([
+//          'title' => $request->title,
+//              'content' => $request->content,
+//              'name' => $request->name,
+//        ]);
 
         return redirect('/messages');
     }
