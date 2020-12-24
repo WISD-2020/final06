@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\DB;
 use App\Models\Message;
 use App\Repositories\MessageRepository;
 use App\Http\Controllers\Controller;
@@ -14,12 +15,9 @@ class HistoryController extends Controller
 
     public function index()
     {
+       $posts=DB::table('museum_histories')->where('id', '>', "1")->get();
+        return view('introduction/history',['museum_histories' => $posts]);
 
-        //$messages = $request->user()->messages()->get();
-//        $messages = Message::where('user_id', $request->user()->id)->get();
-//        return view('messages.index', [
-//            'messages' => $messages,
-//        ]);
 
         //$his= Auth::museum_histories()->get();
         //$his= DB::table('museum_histories')->get();
@@ -30,18 +28,18 @@ class HistoryController extends Controller
 //            echo '<td>'.$history->text.'</td>';
 //            echo '</tr>';
 //
-        History::chunk(200, function ($histories) {
-            foreach ($histories as $history) {
-                echo "<tr>";
-                    echo "<td width='15%' align='center'>".$history->date."</td>";
-                    echo "<td width='15%' align='center'>".$history->end_date."</td>";
-                    echo "<td>".$history->text."</td>";
-                echo "</tr>";
-            }
-        });
+//        History::chunk(200, function ($histories) {
+//            foreach ($histories as $history) {
+//                echo "<tr>";
+//                    echo "<td width='15%' align='center'>".$history->date."</td>";
+//                    echo "<td width='15%' align='center'>".$history->end_date."</td>";
+//                    echo "<td>".$history->text."</td>";
+//                echo "</tr>";
+//            }
+//        });
 
 
-        return view('introduction/history');
+
 
     }
 }
