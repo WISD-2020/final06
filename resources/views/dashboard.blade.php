@@ -34,7 +34,7 @@
                             <h2>留言板</h2>
                         </header>
                         <footer class="align-center">
-                            <a href="{{route('internal.index')}}" class="button alt">留言GO！</a>
+                            <a href="{{route('messages.index')}}" class="button alt">留言GO！</a>
                         </footer>
                     </div>
                 </div>
