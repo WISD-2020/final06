@@ -144,10 +144,6 @@
                                 </div>
                             </div>
                         @endif
-
-                    </table>
-                </form>
-
             </div>
         </div>
     </div>

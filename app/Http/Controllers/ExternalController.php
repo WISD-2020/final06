@@ -10,7 +10,7 @@ class ExternalController extends Controller
 {
     public function index()
     {
-        $posts=DB::table('external_areas')->where('id', '>', "1")->get();
+        $posts=DB::table('external_areas')->where('id', '>', "0")->get();
         return view('introduction/external',['external_areas' => $posts]);
     }
 }

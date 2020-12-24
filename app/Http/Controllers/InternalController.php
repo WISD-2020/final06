@@ -10,7 +10,7 @@ class InternalController extends Controller
 {
     public function index()
     {
-        $posts=DB::table('internal_areas')->where('id', '>', "1")->get();
+        $posts=DB::table('internal_areas')->where('id', '>', "0")->get();
         return view('introduction/internal',['internal_areas' => $posts]);
     }
 }

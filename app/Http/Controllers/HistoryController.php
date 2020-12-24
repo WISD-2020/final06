@@ -11,7 +11,7 @@ class HistoryController extends Controller
 
     public function index()
     {
-       $posts=DB::table('museum_histories')->where('id', '>', "1")->get();
+       $posts=DB::table('museum_histories')->where('id', '>', "0")->get();
         return view('introduction/history',['museum_histories' => $posts]);
     }
 }
