@@ -31,10 +31,12 @@ class MessageController extends Controller
             'content' => 'required|max:255',
 
         ]);
-        $request->user()->messages()->create($request->all());
-//        $request->user()->messages()->create([
-//            'name' => $request->name,
-//        ]);
+        //$request->user()->messages()->create($request->all());
+          $request->user()->messages()->create([
+          'title' => $request->title,
+              'content' => $request->content,
+              'name' => $request->name,
+        ]);
 
         return redirect('/messages');
     }

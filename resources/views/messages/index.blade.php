@@ -64,16 +64,16 @@
                             <!-- Message Name -->
                             <td class="table-text">
                                 <div>{{ $message->user_name }}</div>
-
                             </td>
+
                             <td class="table-text">
                                 <div>{{ $message->title }}</div>
-
                             </td>
+
                             <td class="table-text">
                                 <div>{{ $message->content}}</div>
-
                             </td>
+
                             <td class="table-text">
                                 <div>{{ $message->created_at }}</div>
                             </td>
