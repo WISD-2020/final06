@@ -36,8 +36,8 @@
 //    }
 //    ?>
     <form action="{{route('visits.store')}}" method="POST" role="form">
-        @method('POST')
-        @csrf
+        {{ method_field('POST') }}
+        {{ csrf_field() }}
         {{--    @foreach($posts as $post)--}}
         {{--        <tr><td><div>{{ $post->title }}</div></td></tr>--}}
         {{--    @endforeach--}}

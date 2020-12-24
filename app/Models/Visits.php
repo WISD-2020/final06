@@ -20,13 +20,6 @@ class Visits extends Model
 
     public $timestamps = false;
 
-    protected $casts = [
-//        'people_id' => 'integer',
-        'date' => 'date',
-        'period' => 'string',
-        'way_id' => 'integer',
-    ];
-
     public function user()
     {
         return $this->belongsTo(User::class);
