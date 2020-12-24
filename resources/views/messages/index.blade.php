@@ -40,16 +40,6 @@
 
                 </table>
             </form>
-        <!-- 留言內容 -->
-           <div class="form-group">
-                <label for="message-name" class="col-sm-3 control-label">請輸入留言</label>
-
-                <div class="col-sm-6">
-                    <input type="text" name="name" id="message-name" class="form-control">
-                </div>
-
-            </div>
-
 
     <!-- 顯示目前留言 -->
     @if (count($messages) > 0)
