@@ -9,36 +9,64 @@ use Encore\Admin\Grid;
 use Encore\Admin\Show;
 use Encore\Admin\Layout\Content;
 use Encore\Admin\Controllers\HasResourceActions;
+use Illuminate\Http\Request;
+use Encore\Admin\Controllers;
+use Illuminate\Routing\Controller;
 class UserController extends AdminController
 {
     use HasResourceActions;
     public function index(Content $content)
     {
-        return $content
+        /*return $content
             ->header('會員管理')
             ->description('管理所有會員')
+            ->body($this->grid());*/
+        return $content
+            ->title($this->title())
+            ->description($this->description['index'] ?? trans('會員管理'))
             ->body($this->grid());
     }
     public function show($id, Content $content)
     {
-        return $content
+        /*return $content
             ->header($this->title)
             ->description('description')
+            ->body($this->detail($id));*/
+        return $content
+            ->title($this->title())
+            ->description($this->description['show'] ?? trans('user.show'))
             ->body($this->detail($id));
     }
     public function edit($id, Content $content)
     {
-        return $content
+        /*return $content
             ->header($this->title)
             ->description('編輯')
+            ->body($this->form()->edit($id));*/
+        return $content
+            ->title($this->title())
+            ->description($this->description['edit'] ?? trans('user.edit'))
             ->body($this->form()->edit($id));
     }
     public function create(Content $content)
     {
-        return $content
+       /* return $content
             ->header($this->title)
             ->description('description')
+            ->body($this->form());*/
+        return $content
+            ->title($this->title())
+            ->description($this->description['create'] ?? trans('user.create'))
             ->body($this->form());
+    }
+    public function store()
+    {
+        app(UserRequest::class);
+        return $this->form()->store();
+    }
+    public function update($id) {
+        app(UserRequest::class);
+        return $this->form()->update($id);
     }
 
     /**
@@ -112,11 +140,11 @@ class UserController extends AdminController
         $form->email('email', __('Email'));
         $form->datetime('email_verified_at', __('Email verified at'))->default(date('Y-m-d H:i:s'));
         $form->password('password', __('Password'));
-        $form->textarea('two_factor_secret', __('Two factor secret'));
-        $form->textarea('two_factor_recovery_codes', __('Two factor recovery codes'));
-        $form->text('remember_token', __('Remember token'));
-        $form->number('current_team_id', __('Current team id'));
-        $form->textarea('profile_photo_path', __('Profile photo path'));
+        //$form->textarea('two_factor_secret', __('Two factor secret'));
+        //$form->textarea('two_factor_recovery_codes', __('Two factor recovery codes'));
+        //$form->text('remember_token', __('Remember token'));
+        //$form->number('current_team_id', __('Current team id'));
+        //$form->textarea('profile_photo_path', __('Profile photo path'));
 
         return $form;
     }
