@@ -1,7 +1,7 @@
-@extends('layouts.c')
+@extends('layouts.m')
 
 @section('content')
-
+<img src="images/museum4.jpg"  alt="" height="800" width="1600"/>
 
 
     <div class="panel-body">
@@ -11,9 +11,37 @@
     <!-- 新留言的表單 -->
         <form action="/message" method="POST" class="form-horizontal">
         {{ csrf_field() }}
+        <!-- 留言表格 -->
+                <table border="0" width="800" align="center" cellspacing="0">
+                    <tr bgcolor="#0084CA" align="center">
+                        <td colspan="2">
+                    </tr>
 
+                    <tr bgcolor="#84D7FF">
+                        <td width="15%">標題</td>
+                        <td width="85%"><input type="text" name="title" id="message-title" class="form-control"size="50"></td>
+                    </tr>
+                    <tr bgcolor="#D9F2FF">
+                        <td width="15%">內容</td>
+                        <td width="85%"><input type="text" name="content" id="message-content" class="form-control"></td>
+                    </tr>
+                    <!-- 留言按鈕 -->
+                    <tr>
+                        <td colspan="2" align="center">　
+                            <button type="submit" class="btn btn-default">
+                                <i class="fa fa-plus"></i>留言
+                            </button>
+                            <button type="reset" class="btn btn-default">
+                                <i class="fa fa-plus"></i>重新輸入
+                            </button>
+                        </td>
+                    </tr>
+                    <!---->
+
+                </table>
+            </form>
         <!-- 留言內容 -->
-            <div class="form-group">
+           <div class="form-group">
                 <label for="message-name" class="col-sm-3 control-label">請輸入留言</label>
 
                 <div class="col-sm-6">
@@ -21,20 +49,6 @@
                 </div>
 
             </div>
-            <div class="col-sm-6">
-                <input type="text" name="id" id="message-name" class="form-control">
-            </div>
-
-            <!-- 增加留言按鈕-->
-            <div class="form-group">
-                <div class="col-sm-offset-3 col-sm-6">
-                    <button type="submit" class="btn btn-default">
-                        <i class="fa fa-plus"></i> 留言
-                    </button>
-                </div>
-            </div>
-        </form>
-    </div>
 
 
     <!-- 顯示目前留言 -->
@@ -59,10 +73,24 @@
                         <tr>
                             <!-- Message Name -->
                             <td class="table-text">
-                                <div>{{ $message->name }}</div>
-                            </td>
-                                <!--刪除按鈕 -->
+                                <div>{{ $message->user_name }}</div>
 
+                            </td>
+                            <td class="table-text">
+                                <div>{{ $message->title }}</div>
+
+                            </td>
+                            <td class="table-text">
+                                <div>{{ $message->content}}</div>
+
+                            </td>
+                            <td class="table-text">
+                                <div>{{ $message->created_at }}</div>
+                            </td>
+
+
+
+                                <!--刪除按鈕 -->
                             <td>
                                 <form action="/message/{{ $message->id }}" method="POST">
                                     {{ csrf_field() }}
@@ -80,5 +108,6 @@
                 </table>
             </div>
         </div>
+
     @endif
 @endsection
