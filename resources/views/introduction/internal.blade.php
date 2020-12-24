@@ -89,41 +89,47 @@
                     <p>台灣美術館</p>
                     <h2>內部介紹</h2>
                 </header>
-                <form action="">
-                    <table align="center">
-                        <tr>
-                            <td>區域</td>
-                            <td>樓層</td>
-                            <td>介紹</td>
-                        </tr>
-<!--                        --><?php
-//                        //echo $re;
-//                        //將欄位變成一個個陣列
-//                        $k=0;
-//                        while($row=$re-> fetch_assoc())
-//                        {
-//                            $t_name[]=$row["name"];
-//                            // echo count($g_id);
-//                            $t_position[]=$row["position"];
-//                            $t_intro[]=$row["introduction"];
-//                            $k=$k+1;
-//
-//                        }
-//                        //echo $k;
-//                        for ($i=0; $i < $k ; $i++) {
-//                            # code...
-//                            echo "<tr>
-//				                        <td>".$t_name[$i]."</td>
-//				                        <td>".$t_position[$i]."</td>
-//				                        <td>".$t_intro[$i]."</td>
-//				                        </tr>
-//				                        ";
-//                        }
-//                        ?>
+                @if (count($internal_areas) > 0)
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
 
-                    </table>
-                </form>
+                        </div>
 
+                        <div class="panel-body">
+                            <center>
+                                <table class="table table-striped message-table" style="width:80%">
+
+                                    <!-- 表頭 -->
+                                    <thead>
+                                    <th>區域</th>
+                                    <th>位於</th>
+                                    <th>介紹</th>
+                                    </thead>
+
+                                    <!-- 表身 -->
+                                    <tbody>
+                                    @foreach ($internal_areas as $internal)
+                                        <tr>
+                                            <!-- Message Name -->
+                                            <td class="table-text" width="20%">
+                                                <div>{{ $internal->name }}</div>
+                                            </td>
+
+                                            <td class="table-text"width="20%">
+                                                <div>{{ $internal->position }}</div>
+                                            </td>
+
+                                            <td class="table-text"width="60%">
+                                                <div>{{ $internal->introduction }}</div>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
