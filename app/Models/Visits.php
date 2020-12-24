@@ -12,7 +12,7 @@ class Visits extends Model
     protected $table = 'visits';
 
     protected $fillable = [
-        'people_id',
+//        'people_id',
         'date',
         'period',
         'way_id',
@@ -21,7 +21,7 @@ class Visits extends Model
     public $timestamps = false;
 
     protected $casts = [
-        'people_id' => 'integer',
+//        'people_id' => 'integer',
         'date' => 'date',
         'period' => 'string',
         'way_id' => 'integer',

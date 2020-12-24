@@ -17,6 +17,12 @@ class VisitsController extends Controller
     public function store(Request $request)
     {
         $post = Visits::create($request->all());
+
+//        $post = $request->except('date', 'period', 'way_id');
+
+//        $date = $request->input('date');
+//        $period = $request->input('period');
+//        $way_id = $request->input('way_id');
         return redirect()->route('reservation.visits');
 
     }
