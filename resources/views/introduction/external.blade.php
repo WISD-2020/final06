@@ -95,32 +95,29 @@
                             <div class="panel panel-default">
                                 <div class="panel-body">
                                     <center>
-                                        <table class="table table-striped message-table" style="width:80%">
-
-                                            <!-- 表頭 -->
+                                    {{--主要分類--}}
+                                        <table class="table table-striped message-table">
                                             <thead>
-                                            <th>地點</th>
-                                            <th>前言</th>
-                                            <th>介紹</th>
-                                            <th>地址</th>
-                                            <th>路線</th>
-                                            <th>營業時間</th>
+                                                <th>地點</th>
+                                                <th>前言</th>
+                                                <th>介紹</th>
+                                                <th>地址</th>
+                                                <th>路線</th>
                                             </thead>
-
-                                            <!-- 表身 -->
+                                        @foreach ($external_areas as $external)
+                                            @if($external->id <= 3)
                                             <tbody>
-                                            @foreach ($external_areas as $external)
                                                 <tr>
                                                     <!-- Message Name -->
-                                                    <td class="table-text" width="20%">
+                                                    <td class="table-text" width="8%">
                                                         <div>{{ $external->name }}</div>
                                                     </td>
 
-                                                    <td class="table-text" width="20%">
+                                                    <td class="table-text" width="35%">
                                                         <div>{{ $external->preface }}</div>
                                                     </td>
 
-                                                    <td class="table-text"width="30%">
+                                                    <td class="table-text"width="37%">
                                                         <div>{{ $external->introduction }}</div>
                                                     </td>
 
@@ -131,14 +128,108 @@
                                                     <td class="table-text"width="10%">
                                                         <div>{{ $external->way }}</div>
                                                     </td>
-
-                                                    <td class="table-text"width="10%">
-                                                        <div>{{ $external->open }}</div>
-                                                    </td>
-
                                                 </tr>
-                                            @endforeach
                                             </tbody>
+                                                @endif
+                                            @endforeach
+                                        </table>
+                                    </center>
+                                    {{--草悟道--}}
+                                    <center>
+                                        <table class="table table-striped message-table">
+                                            <thead>
+                                            <tr><td colspan="5" align="center"><font size="6">草悟道</font></td></tr>
+                                            <th>地點</th>
+                                            <th>介紹</th>
+                                            </thead>
+                                            @foreach ($external_areas as $external)
+                                                @if($external->id >= 4 & $external->id <= 6)
+                                                    <tbody>
+                                                    <tr>
+                                                        <!-- Message Name -->
+                                                        <td class="table-text" width="10%">
+                                                            <div>{{ $external->name }}</div>
+                                                        </td>
+
+                                                        <td class="table-text"width="90%">
+                                                            <div>{{ $external->introduction }}</div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                @endif
+                                            @endforeach
+                                        </table>
+                                    </center>
+                                    {{--審計新村--}}
+                                    <center>
+                                        <table class="table table-striped message-table">
+                                            <thead>
+                                            <tr><td colspan="5" align="center"><font size="6">審計新村</font></td></tr>
+                                            <th>地點</th>
+                                            <th>介紹</th>
+                                            <th>地址</th>
+                                            <th>營業時間</th>
+                                            </thead>
+                                            @foreach ($external_areas as $external)
+                                                @if($external->id >= 7 & $external->id <= 14)
+                                                    <tbody>
+                                                    <tr>
+                                                        <!-- Message Name -->
+                                                        <td class="table-text" width="10%">
+                                                            <div>{{ $external->name }}</div>
+                                                        </td>
+
+                                                        <td class="table-text"width="50%">
+                                                            <div>{{ $external->introduction }}</div>
+                                                        </td>
+
+                                                        <td class="table-text"width="20%">
+                                                            <div>{{ $external->position }}</div>
+                                                        </td>
+
+                                                        <td class="table-text"width="20%">
+                                                            <div>{{ $external->open }}</div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                @endif
+                                            @endforeach
+                                        </table>
+                                    </center>
+                                    {{--忠信市場--}}
+                                    <center>
+                                        <table class="table table-striped message-table">
+                                            <thead>
+                                            <tr><td colspan="5" align="center"><font size="6">忠信市場</font></td></tr>
+                                            <th>地點</th>
+                                            <th>介紹</th>
+                                            <th>地址</th>
+                                            <th>營業時間</th>
+                                            </thead>
+                                            @foreach ($external_areas as $external)
+                                                @if($external->id >= 15 & $external->id <= 17)
+                                                    <tbody>
+                                                    <tr>
+                                                        <!-- Message Name -->
+                                                        <td class="table-text" width="10%">
+                                                            <div>{{ $external->name }}</div>
+                                                        </td>
+
+                                                        <td class="table-text"width="50%">
+                                                            <div>{{ $external->introduction }}</div>
+                                                        </td>
+
+                                                        <td class="table-text"width="20%">
+                                                            <div>{{ $external->position }}</div>
+                                                        </td>
+
+                                                        <td class="table-text"width="20%">
+                                                            <div>{{ $external->open }}</div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                @endif
+                                            @endforeach
                                         </table>
                                     </center>
                                 </div>
