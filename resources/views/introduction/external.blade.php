@@ -86,7 +86,7 @@
 <section id="two" class="wrapper style2">
     <div class="inner">
         <div class="box">
-            <div class="content">
+            <div class="content" id="周遭景點">
                 <header class="align-center">
                     <p>台灣美術館</p>
                     <h2>周遭景點</h2>
@@ -98,6 +98,7 @@
                                     {{--主要分類--}}
                                         <table class="table table-striped message-table">
                                             <thead>
+                                            <tr><td colspan="5" align="center"><font size="6"><h4>➲<a href="#草悟道">草悟道</a>　➲<a href="#審計新村">審計新村</a>　➲<a href="#忠信市場">忠信市場</a></h4></font></td></tr>
                                                 <th>地點</th>
                                                 <th>前言</th>
                                                 <th>介紹</th>
@@ -138,7 +139,7 @@
                                     <center>
                                         <table class="table table-striped message-table">
                                             <thead>
-                                            <tr><td colspan="5" align="center"><font size="6">草悟道</font></td></tr>
+                                            <tr><td colspan="5" align="center" id="草悟道"><font size="6">草悟道</font></td></tr>
                                             <th>地點</th>
                                             <th>介紹</th>
                                             </thead>
@@ -159,12 +160,45 @@
                                                 @endif
                                             @endforeach
                                         </table>
+                                        <section id="three" class="wrapper style2">
+                                            <div class="inner" style="width:90%">
+                                                <header class="align-center">
+                                                    <p class="special">Calligraphy Greenway</p>
+                                                    <h2><a href="#周遭景點">草悟道</a></h2>
+                                                </header>
+                                                <div class="image fit">
+                                                    <img src="images/ex1-1.jpg" alt="" />
+                                                </div>
+                                                <div class="gallery">
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex1-2.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex1-3.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex1-4.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex1-5.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </center>
                                     {{--審計新村--}}
                                     <center>
                                         <table class="table table-striped message-table">
-                                            <thead>
-                                            <tr><td colspan="5" align="center"><font size="6">審計新村</font></td></tr>
+                                        <thead>
+                                        <tr><td colspan="5" align="center"><font size="6" id="審計新村">審計新村</font></td></tr>
                                             <th>地點</th>
                                             <th>介紹</th>
                                             <th>地址</th>
@@ -195,12 +229,106 @@
                                                 @endif
                                             @endforeach
                                         </table>
+                                        <section id="three" class="wrapper style2">
+                                            <div class="inner" style="width:90%">
+                                                <header class="align-center">
+                                                    <p class="special">Sheng Ji New Village</p>
+                                                    <h2><a href="#周遭景點">審計新村</a></h2>
+                                                </header>
+                                                <div class="gallery">
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-1.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-2.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-3.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-4.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <header class="align-center">
+                                                <p class="special"><a href="#審計新村">審計新村</a></p>
+                                                <h2>旅禾泡芙之家 & 魚刺人雞蛋糕</h2>
+                                            </header>
+                                            <div class="gallery">
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-5.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-6.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <header class="align-center">
+                                                <p class="special"><a href="#審計新村">審計新村</a></p>
+                                                <h2>艸水木堂 & 甜月亮義大利手作冰淇淋</h2>
+                                            </header>
+                                            <div class="gallery">
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-7.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-8.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                            <header class="align-center">
+                                                <p class="special"><a href="#審計新村">審計新村</a></p>
+                                                <h2>成真咖啡ComeTrueCoffee & 三時福利社（三時杏仁）</h2>
+                                            </header>
+                                                <div class="gallery">
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-9.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-10.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                            <header class="align-center">
+                                                <p class="special"><a href="#審計新村">審計新村</a></p>
+                                                <h2>HWC黑沃咖啡 & 繞輪司LAWRENCE</h2>
+                                            </header>
+                                                <div class="gallery">
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-11.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex2-12.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </center>
                                     {{--忠信市場--}}
                                     <center>
                                         <table class="table table-striped message-table">
                                             <thead>
-                                            <tr><td colspan="5" align="center"><font size="6">忠信市場</font></td></tr>
+                                            <tr><td colspan="5" align="center" id="忠信市場"><font size="6">忠信市場</font></td></tr>
                                             <th>地點</th>
                                             <th>介紹</th>
                                             <th>地址</th>
@@ -231,6 +359,74 @@
                                                 @endif
                                             @endforeach
                                         </table>
+                                        <section id="three" class="wrapper style2">
+                                            <div class="inner" style="width:90%">
+                                                <header class="align-center">
+                                                    <p class="special">Zhongxin Market</p>
+                                                    <h2><a href="#周遭景點">忠信市場</a></h2>
+                                                </header>
+                                                <div class="gallery">
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex3-1.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex3-2.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <header class="align-center">
+                                                    <p class="special"><a href="#忠信市場">忠信市場</a></p>
+                                                     <h2>Toku Toku-matcha & coffee</h2>
+                                                </header>
+                                                <div class="gallery">
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex3-3.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex3-4.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <header class="align-center">
+                                                    <p class="special"><a href="#忠信市場">忠信市場</a></p>
+                                                    <h2>春丸餐包製作所</h2>
+                                                </header>
+                                                <div class="gallery">
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex3-5.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex3-6.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <header class="align-center">
+                                                    <p class="special"><a href="#忠信市場">忠信市場</a></p>
+                                                    <h2>感傷唱片行</h2>
+                                                </header>
+                                                <div class="gallery">
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex3-7.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="image fit">
+                                                            <img src="images/ex3-8.jpg" alt="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                     </center>
                                 </div>
                             </div>
