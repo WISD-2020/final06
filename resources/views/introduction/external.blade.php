@@ -91,50 +91,59 @@
                     <p>台灣美術館</p>
                     <h2>周遭景點</h2>
                 </header>
-                <form action="">
-                    <table align="center">
-                        <tr>
-                            <td>地點</td>
-                            <td>前言</td>
-                            <td>介紹</td>
-                            <td>地址</td>
-                            <td>路線</td>
-                            <td>營業時間</td>
-                        </tr>
-<!--                        --><?php
-//                        //echo $re;
-//                        //將欄位變成一個個陣列
-//                        $k=0;
-//                        while($row=$re-> fetch_assoc())
-//                        {
-//                            $to_name[]=$row["name"];
-//                            // echo count($g_id);
-//                            $to_preface[]=$row["preface"];
-//                            $to_intro[]=$row["introduction"];
-//                            $to_position[]=$row["position"];
-//                            $to_way[]=$row["way"];
-//                            $to_open[]=$row["open"];
-//                            $k=$k+1;
-//
-//                        }
-//                        //echo $k;
-//                        for ($i=0; $i < $k ; $i++) {
-//                            # code...
-//                            echo "<tr>
-//				                        <td>".$to_name[$i]."</td>
-//				                        <td>".$to_preface[$i]."</td>
-//				                        <td>".$to_intro[$i]."</td>
-//				                        <td>".$to_position[$i]."</td>
-//				                        <td>".$to_way[$i]."</td>
-//				                        <td>".$to_open[$i]."</td>
-//				                        </tr>
-//				                        ";
-//                        }
-//                        ?>
+                        @if (count($external_areas) > 0)
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <center>
+                                        <table class="table table-striped message-table" style="width:80%">
 
-                    </table>
-                </form>
+                                            <!-- 表頭 -->
+                                            <thead>
+                                            <th>地點</th>
+                                            <th>前言</th>
+                                            <th>介紹</th>
+                                            <th>地址</th>
+                                            <th>路線</th>
+                                            <th>營業時間</th>
+                                            </thead>
 
+                                            <!-- 表身 -->
+                                            <tbody>
+                                            @foreach ($external_areas as $external)
+                                                <tr>
+                                                    <!-- Message Name -->
+                                                    <td class="table-text" width="20%">
+                                                        <div>{{ $external->name }}</div>
+                                                    </td>
+
+                                                    <td class="table-text" width="20%">
+                                                        <div>{{ $external->preface }}</div>
+                                                    </td>
+
+                                                    <td class="table-text"width="30%">
+                                                        <div>{{ $external->introduction }}</div>
+                                                    </td>
+
+                                                    <td class="table-text"width="10%">
+                                                        <div>{{ $external->position }}</div>
+                                                    </td>
+
+                                                    <td class="table-text"width="10%">
+                                                        <div>{{ $external->way }}</div>
+                                                    </td>
+
+                                                    <td class="table-text"width="10%">
+                                                        <div>{{ $external->open }}</div>
+                                                    </td>
+
+                                                </tr>
+                                            @endforeach
+                                            </tbody>
+                                        </table>
+                                    </center>
+                                </div>
+                            </div>
+                        @endif
             </div>
         </div>
     </div>

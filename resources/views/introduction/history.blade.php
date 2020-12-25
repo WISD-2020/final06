@@ -20,52 +20,44 @@
                     <h2>歷史介紹</h2>
                 </header>
 
-                <form action="">
-                    <table align="center">
-                        <tr>
 
-                            <td width="15%" align="center">開始日期</td>
+                @if (count($museum_histories) > 0)
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <center>
+                                <table class="table table-striped message-table" style="width:80%">
 
-                            <td width="15%" align="center">結束日期</td>
+                                    <!-- 表頭 -->
+                                    <thead>
+                                    <th>開始日期</th>
+                                    <th>結束日期</th>
+                                    <th>內容</th>
+                                    </thead>
 
-                            <td width="15%" align="center">內容</td>
+                                    <!-- 表身 -->
+                                    <tbody>
+                                    @foreach ($museum_histories as $history)
+                                        <tr>
+                                            <!-- Message Name -->
+                                            <td class="table-text" width="20%">
+                                                <div>{{ $history->date }}</div>
+                                            </td>
 
+                                            <td class="table-text"width="20%">
+                                                <div>{{ $history->end_date}}</div>
+                                            </td>
 
-                        </tr>
-
-
-                        <!-- 顯示目前留言 -->
-
-{{--                                <div class="panel-body">--}}
-{{--                                    <table class="table table-striped message-table">--}}
-
-{{--                                        <!-- 表頭 -->--}}
-{{--                                        <thead>--}}
-{{--                                        <th>留言</th>--}}
-{{--                                        <th>&nbsp;</th>--}}
-{{--                                        </thead>--}}
-
-{{--                                        <!-- 表身 -->--}}
-{{--                                        <tbody>--}}
-{{--                                            <tr>--}}
-{{--                                                <!-- Message Name -->--}}
-{{--                                                <td class="table-text">--}}
-{{--                                                    <div>{{ $museum_histories->date }}</div>--}}
-
-{{--                                                </td>--}}
-{{--                                                <td class="table-text">--}}
-{{--                                                    <div>{{ $museum_histories->created_at }}</div>--}}
-{{--                                                </td>--}}
-
-{{--                        <tr>--}}
-{{--                            <td width="15%" align="center">{{Auth::museum_histories()->date}}</td>--}}
-{{--                            <td width="15%" align="center">{{Auth::museum_histories()->end_date}}</td>--}}
-{{--                            <td>{{Auth::museum_histories()->text}}</td>--}}
-{{--                        </tr>--}}
-
-                    </table>
-                </form>
-
+                                            <td class="table-text"width="60%">
+                                                <div>{{ $history->text }}</div>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                    </div>
+                @endif
             </div>
         </div>
     </div>

@@ -26,7 +26,7 @@
         <li><a href={{route('ways.index')}}>參訪路線</a></li>
         <li><a href={{route('visits.index')}}>預約參訪</a></li>
         <li><font color="#fffafa">留言</font></li>
-        <li><a href={{route('elements.index')}}>留言板</a></li>
+        <li><a href={{route('messages.index')}}>留言板</a></li>
         <li><font color="#fffafa">會員/管理員</font></li>
         <li><a href={{route('login')}}>登入</a></li>
         <li><a href={{route('register')}}>註冊</a></li>

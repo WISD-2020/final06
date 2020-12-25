@@ -35,9 +35,8 @@
 {{--//        return ['日', '一', '二', '三', '四', '五', '六'][$weekday];--}}
 {{--//    }--}}
 {{--//--}}
-    <form action="/visit" method="POST" role="form">
-{{--        @method('POST')--}}
-{{--        @csrf--}}
+    <form action="{{route('visit.store')}}" method="POST" role="form">
+        {{ method_field('POST') }}
         {{ csrf_field() }}
         {{--    @foreach($posts as $post)--}}
         {{--        <tr><td><div>{{ $post->title }}</div></td></tr>--}}
@@ -83,7 +82,7 @@
         <tr>
             <td colspan="2" align="center">　
                 <button type="submit" class="button special">
-                    <i class="fa fa-plus"></i>送出
+                    送出
                 </button>
             </td>
         </tr>
