@@ -15,7 +15,7 @@
 <div id="main" class="container">
 
             <h3><strong>選擇參訪日期</strong></h3>
-            <input type="date" name="visit_date">
+            <input type="date" name="visit_date" id="visit_date">
             <br><br>
 {{--抓取會員選擇的日期，轉換為星期，在參訪時段顯示出對應星期的參訪時段--}}
 {{--    echo "<script>";--}}
