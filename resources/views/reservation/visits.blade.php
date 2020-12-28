@@ -15,32 +15,11 @@
 <div id="main" class="container">
 
             <h3><strong>選擇參訪日期</strong></h3>
-            <input type="date" name="visit_date" id="visit_date">
+            <input type="date" name="date" id="date">
             <br><br>
-{{--抓取會員選擇的日期，轉換為星期，在參訪時段顯示出對應星期的參訪時段--}}
-{{--    echo "<script>";--}}
-{{--        var day_list = ['日', '一', '二', '三', '四', '五', '六'];--}}
-{{--        var date = new Date();--}}
-{{--        var day  = date.getDay();--}}
-
-{{--        document.write('Today is 星期' + day_list[day]);--}}
-{{--        var week  = day_list[day];--}}
-{{--    echo "</script>";--}}
-
-{{--<!--    -->--}}
-{{--//    $reservation_date=$_POST["reservation_date"];--}}
-{{--//    function get_chinese_weekday($reservation_date)--}}
-{{--//    {--}}
-{{--//        $weekday = date('w', strtotime($reservation_date));--}}
-{{--//        return ['日', '一', '二', '三', '四', '五', '六'][$weekday];--}}
-{{--//    }--}}
-{{--//--}}
     <form action="{{route('visit.store')}}" method="POST" role="form">
         {{ method_field('POST') }}
         {{ csrf_field() }}
-        {{--    @foreach($posts as $post)--}}
-        {{--        <tr><td><div>{{ $post->title }}</div></td></tr>--}}
-        {{--    @endforeach--}}
             <h3><strong>選擇參訪時段</strong></h3>
                 <select name="period" id="period" class="span5" style="width:20%">
                     <option>請選擇時段</option>
@@ -78,9 +57,14 @@
                     <p>①資料中心➜②展覽室➜③古典玫瑰園➜④美術街➜⑤E亭</p>
                 </dd>
             </dl>
+{{--    路線1/2/3被勾選，解說員連結資料表，出現相對應的解說員--}}
+        @if($way_id='1')
+            <h3><strong>解說員</strong></h3>
+{{--            ：<p>{{}}</p>--}}
+        @endif
         <!-- 送出按鈕 -->
         <tr>
-            <td colspan="2" align="center">　
+            <td colspan="2">　
                 <button type="submit" class="button special">
                     送出
                 </button>

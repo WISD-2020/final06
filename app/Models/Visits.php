@@ -24,5 +24,10 @@ class Visits extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function commentators()
+    {
+        return $this->hasMany(Commentator::class);
+    }
 }
 
