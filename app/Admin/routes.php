@@ -4,6 +4,7 @@ use Illuminate\Routing\Router;
 use App\Admin\Controllers\UserController;
 use App\Admin\Controllers\PostController;
 use App\Admin\Controllers\ProductController;
+use App\Admin\Controllers\MessageController;
 Admin::routes();
 
 Route::group([
@@ -29,6 +30,7 @@ Route::group([
     Route::get('/products/create',[ProductController::class, 'create']);
     Route::get('/products/{id}/edit',[ProductController::class, 'edit']);
     Route::get('/products/{id}',[ProductController::class, 'show']);
-
+    /*留言*/
+        Route::get('/messages',[MessageController::class, 'index']);
 
 });
