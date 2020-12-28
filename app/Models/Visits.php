@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Commentator;
 
 class Visits extends Model
 {
@@ -12,7 +13,6 @@ class Visits extends Model
     protected $table = 'visits';
 
     protected $fillable = [
-//        'people_id',
         'date',
         'period',
         'way_id',

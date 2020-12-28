@@ -57,11 +57,19 @@
                     <p>①資料中心➜②展覽室➜③古典玫瑰園➜④美術街➜⑤E亭</p>
                 </dd>
             </dl>
-{{--    路線1/2/3被勾選，解說員連結資料表，出現相對應的解說員--}}
-        @if($way_id='1')
+        {{--    路線1/2/3被勾選，解說員連結資料表，出現相對應的解說員--}}
+{{--        {{$commentators}}--}}
+{{--        @foreach ($commentators as $commentator)--}}
             <h3><strong>解說員</strong></h3>
-{{--            ：<p>{{}}</p>--}}
-        @endif
+{{--            @if($commentator->way_id = 1)--}}
+            {{ $visits->commentators->nickname }}
+{{--            @endif--}}
+{{--        @endforeach--}}
+
+        @foreach($commentators->nickname as $nickname)
+            {{$nickname->content}};
+        @endforeach
+
         <!-- 送出按鈕 -->
         <tr>
             <td colspan="2">　

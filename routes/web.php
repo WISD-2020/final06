@@ -16,13 +16,6 @@ use App\Http\Controllers\MessageController;
 |
 */
 
-/*Route::get('/', function () {
-    return view('home');
-});*/
-/*Route::get('/web1', function () {
-    return view('web1');
-});*/
-
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
@@ -42,9 +35,6 @@ Route::get('/visits',[\App\Http\Controllers\VisitsController::class,'index'])->n
 Route::post('/visit',[\App\Http\Controllers\VisitsController::class,'store'])->name('visit.store');//儲存預約參訪
 
 Route::get('/sendmail',[\App\Http\Controllers\MailController::class,'send']);//email
-
-Route::get('/sendmail',[\App\Http\Controllers\MailController::class,'send']);//email
-
 
 Route::get('/messages', [MessageController::class,'index'])->name('messages.index');
 Route::post('/message', [MessageController::class,'store'])->name('message.store');

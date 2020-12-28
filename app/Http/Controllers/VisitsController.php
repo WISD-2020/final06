@@ -6,6 +6,7 @@ use App\Models\Visits;
 use App\Repositories\VisitRepository;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Models\Commentator;
 
 class VisitsController extends Controller
 {
@@ -23,17 +24,16 @@ class VisitsController extends Controller
             'visits' => $visits,
         ]);
     }
-
+//    protected $casts = ['date' => 'date',];
     public function store(Request $request)
     {
         $this->validate($request, [
             'date' => 'required',
             'period' => 'required',
             'way_id'=> 'required',
-
-
         ]);
         $request->user()->visits()->create($request->all());
+//        $commentator_id = $request->input('commentator_id');
 
 //        $post = $request->except('date', 'period', 'way_id');
 
