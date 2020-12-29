@@ -20,12 +20,14 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('home');
 
+
     /*使用者*/
-    Route::get('/users',[UserController::class, 'index'])->name('users.index');
+        Route::resource('users', '\App\Admin\Controllers\UserController');
+    /*Route::get('/users',[UserController::class, 'index'])->name('users.index');
     Route::get('/users/create',[UserController::class, 'create'])->name('users.create');
     Route::get('/users/{id}/edit',[UserController::class, 'edit']);
     Route::get('/users/{id}',[UserController::class, 'show']);
-    Route::post('posts',[UserController::class, 'store']);
+    Route::post('/user/store',[UserController::class, 'store'])->name('users.store');*/
 
     /***產品*/
     Route::get('/products',[ProductController::class, 'index'])->name('product.index');
@@ -36,16 +38,17 @@ Route::group([
     Route::patch('/product/{id}',[ProductController::class,'update'])->name('product.update');
     Route::delete('/product/{id}',[ProductController::class,'destroy'])->name('product.destroy');
     /**留言*/
-    Route::get('/messages',[MessageController::class, 'index']);
+    /*Route::get('/messages',[MessageController::class, 'index']);
     Route::get('/messages/create',[MessageController::class, 'create']);
     Route::get('/messages/{id}/edit',[MessageController::class, 'edit']);
-    Route::get('/messages/{id}',[MessageController::class, 'show']);
+    Route::get('/messages/{id}',[MessageController::class, 'show']);*/
+    Route::resource('messages','\App\Admin\Controllers\MessageController');
 
     /***預約參訪**/
     Route::get('/visits',[VisitsController::class, 'index']);
 
+    });
 
 
 
 
-});

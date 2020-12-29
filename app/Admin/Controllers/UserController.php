@@ -12,82 +12,14 @@ use Encore\Admin\Layout\Content;
 
 class UserController extends AdminController
 {
-    use HasResourceActions;
     public function index(Content $content)
     {
-        /*return $content
-            ->header('會員管理')
-            ->description('管理所有會員')
-            ->body($this->grid());*/
         return $content
             ->title($this->title())
             ->description($this->description['index'] ?? trans('會員管理'))
             ->body($this->grid());
     }
-
-    public function show($id, Content $content)
-    {
-        /*return $content
-            ->header($this->title)
-            ->description('description')
-            ->body($this->detail($id));*/
-        /*return $content
-            ->title($this->title())
-            ->description($this->description['show'] ?? trans('user.show'))
-            ->body($this->detail($id));*/
-        return $content
-            ->header('Detail')
-            ->description('description')
-            ->body($this->detail($id));
-    }
-    public function edit($id, Content $content)
-    {
-        /*return $content
-            ->header($this->title)
-            ->description('編輯')
-            ->body($this->form()->edit($id));*/
-        /*return $content
-            ->title($this->title())
-            ->description($this->description['edit'] ?? trans('user.edit'))
-            ->body($this->form()->edit($id));*/
-        return $content
-            ->header('Edit')
-            ->description('description')
-            ->body($this->form()->edit($id));
-    }
-    public function create(Content $content)
-    {
-       /* return $content
-            ->header($this->title)
-            ->description('description')
-            ->body($this->form());*/
-        /*return $content
-           ->title($this->title())
-            ->description($this->description['create'] ?? trans('user.create'))
-            ->body($this->form());*/
-        return $content
-            ->header('Create')
-            ->description('description')
-            ->body($this->form());
-    }
-    /*public function create(Content $content)
-    {
-        return User::create([
-            'name' => $content['name'],
-            'email' => $content['email'],
-            'password' => Hash::make($content['password']),
-        ]);
-    }*/
-    public function store()
-    {
-        app(UserRequest::class);
-        return $this->form()->store();
-    }
-    public function update($id) {
-        app(UserRequest::class);
-        return $this->form()->update($id);
-    }
-
+    
     /**
      * Title for current resource.
      *
