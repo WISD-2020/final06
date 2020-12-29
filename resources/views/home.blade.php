@@ -74,6 +74,65 @@
     </div>
 </section>
 
+<section id="two" class="wrapper style3">
+    <div class="inner">
+        <header class="align-center">
+            <p></p>
+            <h2>留言</h2>
+        </header>
+    </div>
+</section>
+<br>
+<form action="{{route('home.index')}}" method="POST" role="form">
+    {{ method_field('POST') }}
+    {{ csrf_field() }}
+@if (count($messages) > 0)
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <center>
+                <table class="table table-striped message-table" style="width:80%">
+                    <!-- 表頭 -->
+                    <thead>
+                    <th>留言編號</th>
+                    <th>會員標號</th>
+                    <th>標題</th>
+                    <th>內容</th>
+                    <th>建立時間</th>
+                    </thead>
+                    <!-- 表身 -->
+                    <tbody>
+                    @foreach ($messages as $message)
+                        <tr>
+                            <!-- Message Name -->
+                            <td class="table-text" width="7%">
+                                <div>{{ $message->id }}</div>
+                            </td>
+                            <td class="table-text"width="7%">
+                                <div>{{ $message->user_id}}</div>
+                            </td>
+                            <td class="table-text"width="25%">
+                                <div>{{ $message->title }}</div>
+                            </td>
+                            <td class="table-text"width="45%">
+                                <div>{{ $message->content }}</div>
+                            </td>
+                            <td class="table-text"width="16%">
+                                <div>{{ $message->created_at }}</div>
+                            </td>
+                        </tr>
+                    @endforeach
+                    <tr><td colspan="5" align="center">
+                            <button type="button" class="button special" href="{{route('messages.index')}}">
+                                前往留言板
+                            </button>
+                    </td></tr>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+    </div>
+@endif
+</form>
 <!-- Two -->
 <section id="two" class="wrapper style3">
     <div class="inner">
