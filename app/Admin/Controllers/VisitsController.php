@@ -65,7 +65,9 @@ class VisitsController extends AdminController
 
         $form->number('user_id', __('User id'));
         $form->date('date', __('Date'))->default(date('Y-m-d'));
-        $form->text('period', __('Period'));
+        //$form->text('period', __('Period'));
+        $form->select('period',__('Period'))->options(['10:00-12:00' => '10:00-12:00', '11:00-13:00' => '11:00-13:00','12:00-14:00' => '12:00-14:00'
+        ,'13:00-15:00' => '13:00-15:00','14:00-16:00' => '14:00-16:00','15:00-17:00' => '15:00-17:00','16:00-18:00' => '16:00-18:00', 'val' => 'period']);
         $form->number('way_id', __('Way id'));
 
         return $form;
