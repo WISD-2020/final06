@@ -4,14 +4,12 @@ namespace App\Admin\Controllers;
 
 use App\Models\User;
 use Encore\Admin\Controllers\AdminController;
+use Encore\Admin\Controllers\HasResourceActions;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
 use Encore\Admin\Layout\Content;
-use Encore\Admin\Controllers\HasResourceActions;
-use Illuminate\Http\Request;
-use Encore\Admin\Controllers;
-use Illuminate\Routing\Controller;
+
 class UserController extends AdminController
 {
     use HasResourceActions;
@@ -26,15 +24,20 @@ class UserController extends AdminController
             ->description($this->description['index'] ?? trans('會員管理'))
             ->body($this->grid());
     }
+
     public function show($id, Content $content)
     {
         /*return $content
             ->header($this->title)
             ->description('description')
             ->body($this->detail($id));*/
-        return $content
+        /*return $content
             ->title($this->title())
             ->description($this->description['show'] ?? trans('user.show'))
+            ->body($this->detail($id));*/
+        return $content
+            ->header('Detail')
+            ->description('description')
             ->body($this->detail($id));
     }
     public function edit($id, Content $content)
@@ -43,9 +46,13 @@ class UserController extends AdminController
             ->header($this->title)
             ->description('編輯')
             ->body($this->form()->edit($id));*/
-        return $content
+        /*return $content
             ->title($this->title())
             ->description($this->description['edit'] ?? trans('user.edit'))
+            ->body($this->form()->edit($id));*/
+        return $content
+            ->header('Edit')
+            ->description('description')
             ->body($this->form()->edit($id));
     }
     public function create(Content $content)
@@ -54,11 +61,23 @@ class UserController extends AdminController
             ->header($this->title)
             ->description('description')
             ->body($this->form());*/
-        return $content
-            ->title($this->title())
+        /*return $content
+           ->title($this->title())
             ->description($this->description['create'] ?? trans('user.create'))
+            ->body($this->form());*/
+        return $content
+            ->header('Create')
+            ->description('description')
             ->body($this->form());
     }
+    /*public function create(Content $content)
+    {
+        return User::create([
+            'name' => $content['name'],
+            'email' => $content['email'],
+            'password' => Hash::make($content['password']),
+        ]);
+    }*/
     public function store()
     {
         app(UserRequest::class);
@@ -97,7 +116,6 @@ class UserController extends AdminController
         $grid->column('profile_photo_path', __('Profile photo path'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
-
         return $grid;
     }
 
@@ -145,7 +163,6 @@ class UserController extends AdminController
         //$form->text('remember_token', __('Remember token'));
         //$form->number('current_team_id', __('Current team id'));
         //$form->textarea('profile_photo_path', __('Profile photo path'));
-
         return $form;
     }
 }
