@@ -16,6 +16,9 @@ class Visits extends Model
         'period',
         'way_id',
     ];
+    protected $casts = [
+        'date' => 'date',
+    ];
 
     public $timestamps = false;
 

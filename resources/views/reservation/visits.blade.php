@@ -13,13 +13,12 @@
 @include('common.errors')
 <!-- Main -->
 <div id="main" class="container">
-
-            <h3><strong>選擇參訪日期</strong></h3>
-            <input type="date" name="date" id="date">
-            <br><br>
     <form action="{{route('visit.store')}}" method="POST" role="form">
         {{ method_field('POST') }}
         {{ csrf_field() }}
+        <h3><strong>選擇參訪日期</strong></h3>
+        <input type="date" name="date" id="date" value="date">
+        <br><br>
             <h3><strong>選擇參訪時段</strong></h3>
                 <select name="period" id="period" class="span5" style="width:20%">
                     <option>請選擇時段</option>
@@ -57,24 +56,12 @@
                     <p>①資料中心➜②展覽室➜③古典玫瑰園➜④美術街➜⑤E亭</p>
                 </dd>
             </dl>
-        {{--    路線1/2/3被勾選，解說員連結資料表，出現相對應的解說員--}}
-{{--        {{$commentators}}--}}
-{{--        @foreach ($commentators as $commentator)--}}
-            <h3><strong>解說員</strong></h3>
-{{--            @if($commentator->way_id = 1)--}}
-            {{ $visits->commentators->nickname }}
-{{--            @endif--}}
-{{--        @endforeach--}}
-
-        @foreach($commentators->nickname as $nickname)
-            {{$nickname->content}};
-        @endforeach
-
         <!-- 送出按鈕 -->
         <tr>
-            <td colspan="2">　
-                <button type="submit" class="button special">
-                    送出
+            <td colspan="2">
+                <input type="button" name="button" value="送出" class="button special" onclick="if(confirm('確認要送出本預約嗎？')) this.form.submit();">
+                <button type="reset" class="button alt">
+                    重新輸入
                 </button>
             </td>
         </tr>

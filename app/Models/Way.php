@@ -10,7 +10,7 @@ class Way extends Model
     use HasFactory;
 
     protected $table = 'ways';
-
+    protected $primaryKey = 'id';
     public $timestamps = false;
 
     public function visit()
