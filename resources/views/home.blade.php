@@ -107,24 +107,24 @@
                             <td class="table-text" width="7%">
                                 <div>{{ $message->id }}</div>
                             </td>
-                            <td class="table-text"width="7%">
+                            <td class="table-text" width="7%">
                                 <div>{{ $message->user_id}}</div>
                             </td>
-                            <td class="table-text"width="25%">
+                            <td class="table-text" width="25%">
                                 <div>{{ $message->title }}</div>
                             </td>
-                            <td class="table-text"width="45%">
+                            <td class="table-text" width="45%">
                                 <div>{{ $message->content }}</div>
                             </td>
-                            <td class="table-text"width="16%">
+                            <td class="table-text" width="16%">
                                 <div>{{ $message->created_at }}</div>
                             </td>
                         </tr>
                     @endforeach
                     <tr><td colspan="5" align="center">
-                            <button type="button" class="button special" href="{{route('messages.index')}}">
+                            <a href="{{route('messages.index')}}"><button type="button" class="button special">
                                 前往留言板
-                            </button>
+                            </button></a>
                     </td></tr>
                     </tbody>
                 </table>
