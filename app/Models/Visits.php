@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Commentator;
 
 class Visits extends Model
 {
@@ -25,9 +24,9 @@ class Visits extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function commentators()
+    public function way()
     {
-        return $this->hasMany(Commentator::class);
+        return $this->belongsTo(Way::class);
     }
 }
 
