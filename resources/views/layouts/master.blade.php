@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-
 <!-- Header -->
 <header id="header" class="alt">
     <div class="logo"><a href={{route('home.index')}}><img src="images/logo.png" width="200"></a></div>
     <a href="#menu">Menu</a>
 </header>
-
 <!-- Nav -->
 <nav id="menu">
     <ul class="links">
@@ -42,7 +40,6 @@
 <script src="assets/js/skel.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-
 </body>
 </html>
 

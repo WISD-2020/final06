@@ -17,8 +17,6 @@
         top:50%;
         right: 0;
         text-decoration: none;
-
-
     }
     .w3-btn-floating_left{
         display: inline-block;
@@ -36,14 +34,17 @@
         top:50%;
         left:0;
         text-decoration: none;
-
-
     }
     p{
         color: white;
     }
-
-
+    a{
+        color: white;
+    }
+    .img_box{
+        height: 100%;
+        width: 100%;
+    }
 </style>
 <body class="subpage">
 <!-- One -->
@@ -51,10 +52,15 @@
     <div class="inner">
         <header class="align-center">
             <div class="img_box">
-                <img class="mySlides" src="images/1F.jpg" width="100%" height="500">
-                <img class="mySlides" src="images/2F.jpg" width="100%" height="500">
-                <img class="mySlides" src="images/3F.jpg" width="100%" height="500">
-                <img class="mySlides" src="images/garden.jpg" width="100%" height="500">
+                <img class="mySlides" src="images/park.png" width="100%" height="750">
+                <img class="mySlides" src="images/1F.jpg" width="100%" height="750">
+                <img class="mySlides" src="images/shop.png" width="100%" height="750">
+                <img class="mySlides" src="images/2F.jpg" width="100%" height="750">
+                <img class="mySlides" src="images/3F.jpg" width="100%" height="750">
+                <img class="mySlides" src="images/data_center.png" width="100%" height="750">
+                <img class="mySlides" src="images/warehouse.png" width="100%" height="750">
+                <img class="mySlides" src="images/spring_r.png" width="100%" height="750">
+
                 <a class="w3-btn-floating_left" onclick="plusDivs(-1)">&#10094;</a>
                 <a class="w3-btn-floating_right" onclick="plusDivs(+1)">&#10095;</a>
             </div>
@@ -94,14 +100,12 @@
                         <div class="panel-body">
                             <center>
                                 <table class="table table-striped message-table" style="width:80%">
-
                                     <!-- 表頭 -->
                                     <thead>
                                     <th>區域</th>
                                     <th>位於</th>
                                     <th>介紹</th>
                                     </thead>
-
                                     <!-- 表身 -->
                                     <tbody>
                                     @foreach ($internal_areas as $internal)

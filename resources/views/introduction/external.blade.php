@@ -17,8 +17,6 @@
         top:50%;
         right: 0;
         text-decoration: none;
-
-
     }
     .w3-btn-floating_left{
         display: inline-block;
@@ -36,14 +34,10 @@
         top:50%;
         left:0;
         text-decoration: none;
-
-
     }
     p{
         color: white;
     }
-
-
 </style>
 <body class="subpage">
 <!-- One -->
@@ -51,26 +45,32 @@
     <div class="inner">
         <header class="align-center">
             <div class="img_box">
-                <img class="mySlides" src="images/greenway2.jpg" width="100%" height="500">
-                <img class="mySlides" src="images/record2.jpg" width="100%" height="500">
-                <img class="mySlides" src="images/coffee1.jpg" width="100%" height="500">
-                <img class="mySlides" src="images/market3.jpg" width="100%" height="500">
+                <img class="mySlides" src="images/green.png" width="100%" height="750">
+                <img class="mySlides" src="images/v_s.png" width="100%" height="750">
+                <img class="mySlides" src="images/market4_n.png" width="100%" height="750">
+                <img class="mySlides" src="images/road.png" width="100%" height="750">
+                <img class="mySlides" src="images/road-2.png" width="100%" height="750">
+                <img class="mySlides" src="images/n_road.png" width="100%" height="750">
+                <img class="mySlides" src="images/phome.png" width="100%" height="750">
+                <img class="mySlides" src="images/310.png" width="100%" height="750">
+                <img class="mySlides" src="images/bcofe.png" width="100%" height="750">
+                <img class="mySlides" src="images/lawre.png" width="100%" height="750">
+                <img class="mySlides" src="images/cofe.png" width="100%" height="750">
+                <img class="mySlides" src="images/bread.png" width="100%" height="750">
+                <img class="mySlides" src="images/re.png" width="100%" height="750">
+
                 <a class="w3-btn-floating_left" onclick="plusDivs(-1)">&#10094;</a>
                 <a class="w3-btn-floating_right" onclick="plusDivs(+1)">&#10095;</a>
-
             </div>
-
         </header>
     </div>
 </section>
 <script>
     var slideIndex = 1;
     showDivs(slideIndex);
-
     function plusDivs(n) {
         showDivs(slideIndex += n);
     }
-
     function showDivs(n) {
         var i;
         var x = document.getElementsByClassName("mySlides");
@@ -151,7 +151,6 @@
                                                         <td class="table-text" width="10%">
                                                             <div>{{ $external->name }}</div>
                                                         </td>
-
                                                         <td class="table-text"width="90%">
                                                             <div>{{ $external->introduction }}</div>
                                                         </td>
@@ -212,15 +211,12 @@
                                                         <td class="table-text" width="10%">
                                                             <div>{{ $external->name }}</div>
                                                         </td>
-
                                                         <td class="table-text"width="50%">
                                                             <div>{{ $external->introduction }}</div>
                                                         </td>
-
                                                         <td class="table-text"width="20%">
                                                             <div>{{ $external->position }}</div>
                                                         </td>
-
                                                         <td class="table-text"width="20%">
                                                             <div>{{ $external->open }}</div>
                                                         </td>

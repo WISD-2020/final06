@@ -5,43 +5,18 @@
 <section class="banner full">
     <article>
         <img src="images/museum1.jpg" alt="" />
-        <div class="inner">
-            <header>
-
-            </header>
-        </div>
     </article>
     <article>
         <img src="images/museum2.jpg" alt="" />
-        <div class="inner">
-            <header>
-
-            </header>
-        </div>
     </article>
     <article>
         <img src="images/museum3.jpg"  alt="" />
-        <div class="inner">
-            <header>
-
-            </header>
-        </div>
     </article>
     <article>
         <img src="images/museum4.jpg"  alt="" />
-        <div class="inner">
-            <header>
-
-            </header>
-        </div>
     </article>
     <article>
         <img src="images/museum5.jpg"  alt="" />
-        <div class="inner">
-            <header>
-
-            </header>
-        </div>
     </article>
 </section>
 
@@ -49,7 +24,6 @@
 <section id="one" class="wrapper style2">
     <div class="inner">
         <div class="grid-style">
-
             <div>
                 <div class="box">
                     <div class="image fit">
@@ -57,7 +31,6 @@
                     </div>
                     <div class="content">
                         <header class="align-center">
-
                             <h2>美術館歷史</h2>
                         </header>
                         <footer class="align-center">
