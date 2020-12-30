@@ -94,6 +94,7 @@
                 <header class="align-center">
                     <p>台灣美術館</p>
                     <h2>內部介紹</h2>
+                    <font size="6"><h4>➲<a href="#B1">B1</a>　➲<a href="#1F">1F</a>　➲<a href="#2F">2F</a>　➲<a href="#3F">3F</a>　➲<a href="#1F-3F">1F-3F展覽室</a>　➲<a href="#館外">館外</a></h4></font>
                 </header>
                 @if (count($internal_areas) > 0)
                     <div class="panel panel-default">
@@ -102,30 +103,352 @@
                                 <table class="table table-striped message-table" style="width:80%">
                                     <!-- 表頭 -->
                                     <thead>
+                                    <tr><td colspan="2" align="center"><font size="6" id="B1">B1</font></td></tr>
                                     <th>區域</th>
-                                    <th>位於</th>
                                     <th>介紹</th>
                                     </thead>
-                                    <!-- 表身 -->
-                                    <tbody>
+
                                     @foreach ($internal_areas as $internal)
-                                        <tr>
-                                            <!-- Message Name -->
-                                            <td class="table-text" width="20%">
-                                                <div>{{ $internal->name }}</div>
-                                            </td>
+                                        @if($internal->id <= 4)
+                                            <tbody>
+                                            <tr>
+                                                <!-- Message Name -->
+                                                <td class="table-text" width="20%">
+                                                    <div>{{ $internal->name }}</div>
+                                                </td>
 
-                                            <td class="table-text"width="20%">
-                                                <div>{{ $internal->position }}</div>
-                                            </td>
-
-                                            <td class="table-text"width="60%">
-                                                <div>{{ $internal->introduction }}</div>
-                                            </td>
-                                        </tr>
+                                                <td class="table-text"width="80%">
+                                                    <div>{{ $internal->introduction }}</div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        @endif
                                     @endforeach
-                                    </tbody>
                                 </table>
+                                <section id="three" class="wrapper style2">
+                                    <div class="inner" style="width:90%">
+                                        <header class="align-center">
+                                            <p class="special"><a href="#B1">B1</a></p>
+                                            <h2>兒童繪本區 & 數位藝術方舟</h2>
+                                        </header>
+                                        <div class="gallery">
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/B1-1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/B1-2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <header class="align-center">
+                                            <p class="special"><a href="#B1">B1</a></p>
+                                            <h2>下凹庭園 & 餐廳春水堂</h2>
+                                        </header>
+                                        <div class="gallery">
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w1-3-2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w1-4-1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </center>
+                            <br><br>
+                            <center>
+                                <table class="table table-striped message-table" style="width:80%">
+                                    <!-- 表頭 -->
+                                    <thead>
+                                    <tr><td colspan="2" align="center"><font size="6" id="1F">1F</font></td></tr>
+                                    <th>區域</th>
+                                    <th>介紹</th>
+                                    </thead>
+
+                                    @foreach ($internal_areas as $internal)
+                                        @if($internal->id >= 5 & $internal->id <= 10)
+                                            <tbody>
+                                            <tr>
+                                                <!-- Message Name -->
+                                                <td class="table-text" width="20%">
+                                                    <div>{{ $internal->name }}</div>
+                                                </td>
+
+                                                <td class="table-text"width="80%">
+                                                    <div>{{ $internal->introduction }}</div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        @endif
+                                    @endforeach
+                                </table>
+                                <section id="three" class="wrapper style2">
+                                    <div class="inner" style="width:90%">
+                                        <header class="align-center">
+                                            <p class="special"><a href="#1F">1F</a></p>
+                                            <h2>演講廳 & E亭</h2>
+                                        </header>
+                                        <div class="gallery">
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w2-1-1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w3-5-1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <header class="align-center">
+                                            <p class="special"><a href="#1F">1F</a></p>
+                                            <h2>精品店 & 美術街</h2>
+                                        </header>
+                                        <div class="gallery">
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w2-9-2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w2-2-1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <header class="align-center">
+                                            <p class="special"><a href="#1F">1F</a></p>
+                                            <h2>時光天井 & 竹林天井</h2>
+                                        </header>
+                                        <div class="gallery">
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w1-5-1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w2-4-2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </center>
+                            <br><br>
+                            <center>
+                                <table class="table table-striped message-table" style="width:80%">
+                                    <!-- 表頭 -->
+                                    <thead>
+                                    <tr><td colspan="2" align="center"><font size="6" id="2F">2F</font></td></tr>
+                                    <th>區域</th>
+                                    <th>介紹</th>
+                                    </thead>
+
+                                    @foreach ($internal_areas as $internal)
+                                        @if($internal->id >= 11 & $internal->id <= 14)
+                                            <tbody>
+                                            <tr>
+                                                <!-- Message Name -->
+                                                <td class="table-text" width="20%">
+                                                    <div>{{ $internal->name }}</div>
+                                                </td>
+
+                                                <td class="table-text"width="80%">
+                                                    <div>{{ $internal->introduction }}</div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        @endif
+                                    @endforeach
+                                </table>
+                                <section id="three" class="wrapper style2">
+                                    <div class="inner" style="width:90%">
+                                        <header class="align-center">
+                                            <p class="special"><a href="#2F">2F</a></p>
+                                            <h2>影音藝術廳 & 研習教室</h2>
+                                        </header>
+                                        <div class="gallery">
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w1-7-2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w2-7-1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <header class="align-center">
+                                            <p class="special"><a href="#2F">2F</a></p>
+                                            <h2>兒童遊戲室 & 咖啡廳古典玫瑰園</h2>
+                                        </header>
+                                        <div class="gallery">
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w1-6-2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w2-5-1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </center>
+                            <br><br>
+                            <center>
+                                <table class="table table-striped message-table" style="width:80%">
+                                    <!-- 表頭 -->
+                                    <thead>
+                                    <tr><td colspan="2" align="center"><font size="6" id="3F">3F</font></td></tr>
+                                    <th>區域</th>
+                                    <th>介紹</th>
+                                    </thead>
+
+                                    @foreach ($internal_areas as $internal)
+                                        @if($internal->id == 15)
+                                            <tbody>
+                                            <tr>
+                                                <!-- Message Name -->
+                                                <td class="table-text" width="20%">
+                                                    <div>{{ $internal->name }}</div>
+                                                </td>
+
+                                                <td class="table-text"width="80%">
+                                                    <div>{{ $internal->introduction }}</div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        @endif
+                                    @endforeach
+                                </table>
+                                <section id="three" class="wrapper style2">
+                                    <div class="inner" style="width:90%">
+                                        <header class="align-center">
+                                            <p class="special"><a href="#3F">3F</a></p>
+                                            <h2>資料中心</h2>
+                                        </header>
+                                        <div class="gallery">
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w3-1-2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/3f-data center.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </center>
+                            <br><br>
+                            <center>
+                                <table class="table table-striped message-table" style="width:80%">
+                                    <!-- 表頭 -->
+                                    <thead>
+                                    <tr><td colspan="2" align="center"><font size="6" id="1F-3F">1F-3F</font></td></tr>
+                                    <th>區域</th>
+                                    <th>介紹</th>
+                                    </thead>
+
+                                    @foreach ($internal_areas as $internal)
+                                        @if($internal->id == 16)
+                                            <tbody>
+                                            <tr>
+                                                <!-- Message Name -->
+                                                <td class="table-text" width="20%">
+                                                    <div>{{ $internal->name }}</div>
+                                                </td>
+
+                                                <td class="table-text"width="80%">
+                                                    <div>{{ $internal->introduction }}</div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        @endif
+                                    @endforeach
+                                </table>
+                                <section id="three" class="wrapper style2">
+                                    <div class="inner" style="width:90%">
+                                        <header class="align-center">
+                                            <p class="special"><a href="#1F-3F">1F-3F</a></p>
+                                            <h2>展覽室</h2>
+                                        </header>
+                                        <div class="gallery">
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w2-8-1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w2-8-2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </center>
+                            <br><br>
+                            <center>
+                                <table class="table table-striped message-table" style="width:80%">
+                                    <!-- 表頭 -->
+                                    <thead>
+                                    <tr><td colspan="2" align="center"><font size="6" id="館外">館外</font></td></tr>
+                                    <th>區域</th>
+                                    <th>介紹</th>
+                                    </thead>
+
+                                    @foreach ($internal_areas as $internal)
+                                        @if($internal->id == 17)
+                                            <tbody>
+                                            <tr>
+                                                <!-- Message Name -->
+                                                <td class="table-text" width="20%">
+                                                    <div>{{ $internal->name }}</div>
+                                                </td>
+
+                                                <td class="table-text"width="80%">
+                                                    <div>{{ $internal->introduction }}</div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        @endif
+                                    @endforeach
+                                </table>
+                                <section id="three" class="wrapper style2">
+                                    <div class="inner" style="width:90%">
+                                        <header class="align-center">
+                                            <p class="special"><a href="#館外">館外</a></p>
+                                            <h2>碑林廣場</h2>
+                                        </header>
+                                        <div class="gallery">
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w1-8-1.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="image fit">
+                                                    <img src="images/w1-8-2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                             </center>
                         </div>
                     </div>
