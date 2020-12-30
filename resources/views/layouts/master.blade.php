@@ -28,8 +28,8 @@
         <li><font color="#fffafa">會員</font></li>
         <li><a href={{route('login')}}>登入</a></li>
         <li><a href={{route('register')}}>註冊</a></li>
-{{--        <li><font color="#fffafa">管理員</font></li>--}}
-        <li><a href="http://localhost:8000/admin">管理員登入</a></li>
+        <li><font color="#fffafa">管理員</font></li>
+        <li><a href="http://localhost:8000/admin">登入</a></li>
     </ul>
 </nav>
 
