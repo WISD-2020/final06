@@ -14,7 +14,7 @@ class ModifyVisitsField extends Migration
     public function up()
     {
         Schema::table('visits', function (Blueprint $table) {
-        $table->string('result');
+        $table->string('result')->default('未確認');
         Schema::drop('reservations');
     });
     }
