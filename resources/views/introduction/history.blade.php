@@ -38,7 +38,7 @@
                                                 <div>{{ $history->date }}</div>
                                             </td>
                                             <td class="table-text"width="20%">
-                                                <div>{{ $history->end_date}}</div>
+                                                <div>{{ $history->end_date }}</div>
                                             </td>
                                             <td class="table-text"width="60%">
                                                 <div>{{ $history->text }}</div>
