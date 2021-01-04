@@ -50,7 +50,7 @@ Route::group([
     Route::resource('visits','\App\Admin\Controllers\VisitsController');
 
     /**寄email***/
-    Route::resource('sendmail', '\App\Admin\Controllers\MailController');
+    Route::resource('sendmail','\App\Admin\Controllers\MailController');
     });
 
 
