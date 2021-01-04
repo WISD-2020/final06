@@ -7,6 +7,7 @@ use App\Admin\Controllers\PostController;
 use App\Admin\Controllers\ProductController;
 use App\Admin\Controllers\MessageController;
 use App\Admin\Controllers\VisitsController;
+use App\Admin\Controllers\MailController;
 
 Admin::routes();
 
@@ -22,7 +23,7 @@ Route::group([
 
 
     /*使用者*/
-        Route::resource('users', '\App\Admin\Controllers\UserController');
+    Route::resource('users', '\App\Admin\Controllers\UserController');
     /*Route::get('/users',[UserController::class, 'index'])->name('users.index');
     Route::get('/users/create',[UserController::class, 'create'])->name('users.create');
     Route::get('/users/{id}/edit',[UserController::class, 'edit']);
@@ -46,8 +47,10 @@ Route::group([
     Route::resource('messages','\App\Admin\Controllers\MessageController');
 
     /***預約參訪**/
-        Route::resource('visits','\App\Admin\Controllers\VisitsController');
+    Route::resource('visits','\App\Admin\Controllers\VisitsController');
 
+    /**寄email***/
+    Route::resource('sendmail', '\App\Admin\Controllers\MailController');
     });
 
 

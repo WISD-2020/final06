@@ -69,7 +69,21 @@
                     </div>
                 </div>
             </div>
-
+            <div>
+                <div class="box">
+                    <div class="image fit">
+                        <img src="images/in.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                        <header class="align-center">
+                            <h2>email</h2>
+                        </header>
+                        <footer class="align-center">
+                            <a href="{{route('sendmail.index')}}" class="button alt">More</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

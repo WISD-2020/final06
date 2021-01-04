@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Routing\Router;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\MessageController;
-
+use App\Http\Controllers\MailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,7 +34,7 @@ Route::get('/way3',[\App\Http\Controllers\Way3Controller::class,'index'])->name(
 Route::middleware(['auth:sanctum', 'verified'])->get('/visits',[\App\Http\Controllers\VisitsController::class,'index'])->name('visits.index');//預約參訪
 Route::post('/visit',[\App\Http\Controllers\VisitsController::class,'store'])->name('visit.store');//儲存預約參訪
 
-Route::get('/sendmail',[\App\Http\Controllers\MailController::class,'send']);//email
+Route::get('/sendmail',[\App\Http\Controllers\MailController::class,'index'])->name('sendmail.index');//email
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/messages', [MessageController::class,'index'])->name('messages.index');
 Route::post('/message', [MessageController::class,'store'])->name('message.store');
