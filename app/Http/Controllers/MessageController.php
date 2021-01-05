@@ -14,7 +14,10 @@ class MessageController extends Controller
     {
         $this->middleware('auth');
         $this->messages = $messages;
+
     }
+
+
     public function index(Request $request)
     {
         $messages = Message::where('user_id', $request->user()->id)->get();
