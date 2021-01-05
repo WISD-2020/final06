@@ -91,7 +91,7 @@
     <div class="inner">
         <div class="box">
             <div class="content">
-                <header class="align-center">
+                <header class="align-center" id="#">
                     <p>台灣美術館</p>
                     <h2>內部介紹</h2>
                     <font size="6"><h4>➲<a href="#B1">B1</a>　➲<a href="#1F">1F</a>　➲<a href="#2F">2F</a>　➲<a href="#3F">3F</a>　➲<a href="#1F-3F">1F-3F展覽室</a>　➲<a href="#館外">館外</a></h4></font>
@@ -449,6 +449,12 @@
                                         </div>
                                     </div>
                                 </section>
+                                <br>
+                                <div class="6u$ 12u$(medium)">
+                                    <ul class="actions">
+                                        <li><a href="#" class="button alt">Top</a></li>
+                                    </ul>
+                                </div>
                             </center>
                         </div>
                     </div>

@@ -14,7 +14,7 @@
     <div class="inner">
         <div class="box">
             <div class="content">
-                <header class="align-center">
+                <header class="align-center" id="#">
                     <p>台灣美術館</p>
                     <h2>歷史介紹</h2>
                 </header>
@@ -47,6 +47,11 @@
                                     @endforeach
                                     </tbody>
                                 </table>
+                                <div class="6u$ 12u$(medium)">
+                                    <ul class="actions">
+                                        <li><a href="#" class="button alt">Top</a></li>
+                                    </ul>
+                                </div>
                             </center>
                         </div>
                     </div>

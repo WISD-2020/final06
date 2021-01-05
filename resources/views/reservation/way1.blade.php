@@ -4,7 +4,7 @@
 <!-- Three -->
 <section id="three" class="wrapper style2">
     <div class="inner">
-        <header class="align-center">
+        <header class="align-center" id="#">
             <p class="special">景點①</p>
             <h2>數位藝術方舟</h2>
         </header>
@@ -162,4 +162,12 @@
         </div>
     </div>
 </section>
+<br>
+<center>
+<div class="6u$ 12u$(medium)">
+    <ul class="actions">
+        <li><a href="#" class="button alt">Top</a></li>
+    </ul>
+</div>
+</center>
 @endsection

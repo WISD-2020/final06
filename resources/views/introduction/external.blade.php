@@ -43,7 +43,7 @@
 <!-- One -->
 <section id="One" class="wrapper style3">
     <div class="inner">
-        <header class="align-center">
+        <header class="align-center" id="#">
             <div class="img_box">
                 <img class="mySlides" src="images/green.png" width="100%" height="750">
                 <img class="mySlides" src="images/v_s.png" width="100%" height="750">
@@ -423,6 +423,12 @@
                                                 </div>
                                             </div>
                                         </section>
+                                        <br>
+                                        <div class="6u$ 12u$(medium)">
+                                            <ul class="actions">
+                                                <li><a href="#" class="button alt">Top</a></li>
+                                            </ul>
+                                        </div>
                                     </center>
                                 </div>
                             </div>
