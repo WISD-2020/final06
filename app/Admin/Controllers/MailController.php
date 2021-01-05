@@ -23,10 +23,11 @@ class MailController extends AdminController
                         ->update(['result' => true]);
                 }
             });
-        $date=DB::table('visits')->pluck('date');
-        $period=DB::table('visits')->pluck('period');
-        $way=DB::table('visits')->pluck('way_id');
-        $content='預約成功!!<br>您已成功於'.$date.$period.'預約國美館路線'.$way.'的參訪';;
+//        $date=DB::table('visits')->pluck('date');
+//        $period=DB::table('visits')->pluck('period');
+//        $way=DB::table('visits')->pluck('way_id');
+//        $content='預約成功!!<br>您已成功於'.$date.$period.'預約國美館路線'.$way.'的參訪';
+        $content='恭喜您成功預約國美館參訪!!!';
         User::all()->each( function ($user) use($content){
             Mail::send(
                 'email.mail',

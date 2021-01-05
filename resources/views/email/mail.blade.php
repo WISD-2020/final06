@@ -8,7 +8,6 @@
 </head>
 <body>
     <h3>你好, {{$name}}</h3>
-    <h4>email內容:</h4>
-    <p>{!! $content !!}</p>
+    <h4><p>{!! $content !!}</p></h4>
 </body>
 </html>
