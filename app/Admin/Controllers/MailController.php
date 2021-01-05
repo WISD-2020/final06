@@ -22,8 +22,8 @@ class MailController extends AdminController
                         ->update(['result' => true]);
                 }
 
-                $name = DB::table('users')->pluck('name');
-                $email=DB::table('users')->pluck('email');
+                $name = DB::table('users')->value('name');
+                $email=DB::table('users')->value('email');
                 $content='Welcome to Laravel 8! <br>This is a mail testing.<br>*******';
                 $data = ['name' => $name, 'content'=> $content,];
                 Mail::send('email.mail', $data, function($message) use($name,$email) {
