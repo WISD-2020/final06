@@ -17,22 +17,21 @@ class MailController extends Controller
                         ->where('id', $visit->id)
                         ->update(['result' => true]);
                 }
-
-                $name = DB::table('users')->pluck('name')->get();
-                $email=DB::table('users')->pluck('email')->get();
-                $content='Welcome to Laravel 8! <br>This is a mail testing.<br>*******';
+                
+                $name = DB::table('users')->pluck('name');
+                $email=DB::table('users')->pluck('email');
+                $date=DB::table('visits')->pluck('date');
+                $period=DB::table('visits')->pluck('period');
+                $way=DB::table('visits')->pluck('way_id');
+                $content='預約成功!!<br>您已成功於'.$date.$period.'預約國美館路線'.$way.'的參訪';
                 $data = ['name' => $name, 'content'=> $content, ];
                 Mail::send('email.mail', $data, function($message) use($name,$email) {
                     $message->subject('預約參訪');
                     $message->to($email, $name);
                     $message->from('ab53014698@gmail.com', 'admin');
-
-
-        });
+                });
             });
         return 'email sent!';
-//        return view('email/email');
-
     }
 }
 

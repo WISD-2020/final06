@@ -2,7 +2,7 @@
 @section('title','國家美術館參訪路線2')
 @section('content')
 <!-- Three -->
-<section id="three" class="wrapper style2">
+<section id="three" class="wrapper style2" id="#">
     <div class="inner">
         <header class="align-center">
             <p class="special">景點①</p>
@@ -182,5 +182,13 @@
         </div>
     </div>
 </section>
+<br>
+<center>
+    <div class="6u$ 12u$(medium)">
+        <ul class="actions">
+            <li><a href="#" class="button alt">Top</a></li>
+        </ul>
+    </div>
+</center>
 @endsection
 
