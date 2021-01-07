@@ -26,7 +26,7 @@
 ====
 前台
 -------
-* 首頁 [3A732005李亞宣](https://github.com/3a73205)
+* 首頁 [3A732005李亞宣](https://github.com/3a73205)<>
 Route::get('/',[\App\Http\Controllers\HomeController::class,'index'])->name('home.index');
 
 * 登入後頁面 [3A732005李亞宣](https://github.com/3a73205)
