@@ -129,10 +129,13 @@ ERD
 額外使用的套件或樣板
 ====
 * 前台樣板 [Hielo](https://templated.co/hielo)
+
 採用選單、首頁格式
 
 * 後台  [Laravel-admin](https://laravel-admin.org)
+
 採用其版面和功能
+
 系統使用者測試帳號
 ====
 前台-會員
