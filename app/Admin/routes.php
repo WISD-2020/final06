@@ -30,15 +30,6 @@ Route::group([
     Route::get('/users/{id}',[UserController::class, 'show']);
     Route::post('/user/store',[UserController::class, 'store'])->name('users.store');*/
 
-    /***產品*/
-    /*Route::get('/products',[ProductController::class, 'index'])->name('product.index');
-    Route::get('/products/create',[ProductController::class, 'create'])->name('product.create');
-    Route::post('/product/store', [ProductController::class, 'store'])->name('product.store');
-    Route::get('/products/{id}/edit',[ProductController::class, 'edit'])->name('product.edit');
-    Route::get('/products/{id}',[ProductController::class, 'show'])->name('product.show');
-    Route::patch('/product/{id}',[ProductController::class,'update'])->name('product.update');
-    Route::delete('/product/{id}',[ProductController::class,'destroy'])->name('product.destroy');*/
-    Route::resource('products','\App\Admin\Controllers\ProductController');
     /**留言*/
     /*Route::get('/messages',[MessageController::class, 'index']);
     Route::get('/messages/create',[MessageController::class, 'create']);
