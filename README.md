@@ -152,7 +152,7 @@
 後台
 -------
 * 管理員頁面 [3A732009張庭瑜](https://github.com/3a732009)
-    * $router->get('/', 'HomeController@index')->name('home');
+    * function (Router $router) {$router->get('/', 'HomeController@index')->name('home'); });
     
 * 管理會員 [3A732009張庭瑜](https://github.com/3a732009)
     * Route::resource('users', '\App\Admin\Controllers\UserController');
