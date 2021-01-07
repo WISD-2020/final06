@@ -56,15 +56,15 @@
 
 後台
 -------
-* 管理員頁面
+* 管理員頁面 [3A732009張庭瑜](https://github.com/3a732009)
     * $router->get('/', 'HomeController@index')->name('home');
-* 管理會員
+* 管理會員 [3A732009張庭瑜](https://github.com/3a732009)
     * Route::resource('users', '\App\Admin\Controllers\UserController');
-* 管理留言
+* 管理留言 [3A732009張庭瑜](https://github.com/3a732009)
     * Route::resource('messages','\App\Admin\Controllers\MessageController');
-* 管理預約參訪
+* 管理預約參訪 [3A732009張庭瑜](https://github.com/3a732009)
     * Route::resource('visits','\App\Admin\Controllers\VisitsController');
-* 寄送email
+* 寄送email [3A732009張庭瑜](https://github.com/3a732009)
     * Route::resource('sendmail','\App\Admin\Controllers\MailController');
     
 ERD
