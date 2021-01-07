@@ -34,6 +34,22 @@ ERD
 -------
 資料表欄位設計
 -------
+* 使用者
+![image](https://i.imgur.com/AnTTGfZ.jpeg)
+* 管理員
+![image](https://i.imgur.com/mCC4aNe.jpeg)
+* 預約參訪
+![image](https://i.imgur.com/E60I15N.jpg)
+* 路線
+![image](https://i.imgur.com/GQW2Kr9.jpeg)
+* 會員留言板
+![image](https://i.imgur.com/2m6sQSX.jpg)
+* 美術館歷史
+![image](https://i.imgur.com/5ZMUKhz.jpeg)
+* 內部樓層
+![image](https://i.imgur.com/9YpN7iu.jpg)
+* 周遭景點
+![image](https://i.imgur.com/HN129VV.jpeg)
 初始專案與DB負責的同學
 ====
 額外使用的樣板
