@@ -46,9 +46,11 @@
     * Route::get('/way1',[\App\Http\Controllers\Way1Controller::class,'index'])->name('way1.index');
     * Route::get('/way2',[\App\Http\Controllers\Way2Controller::class,'index'])->name('way2.index');
     * Route::get('/way3',[\App\Http\Controllers\Way3Controller::class,'index'])->name('way3.index');
+    
 * 預約參訪 [3A732005李亞宣](https://github.com/3a73205)
     * Route::middleware(['auth:sanctum', 'verified'])->get('/visits',[\App\Http\Controllers\VisitsController::class,'index'])->name('visits.index');//預約參訪
     * Route::post('/visit',[\App\Http\Controllers\VisitsController::class,'store'])->name('visit.store');//儲存預約參訪
+    
 * 留言板  [3A732009張庭瑜](https://github.com/3a732009)
     * Route::middleware(['auth:sanctum', 'verified'])->get('/messages', [MessageController::class,'index'])->name('messages.index');
     * Route::post('/message', [MessageController::class,'store'])->name('message.store');
@@ -58,12 +60,16 @@
 -------
 * 管理員頁面 [3A732009張庭瑜](https://github.com/3a732009)
     * $router->get('/', 'HomeController@index')->name('home');
+    
 * 管理會員 [3A732009張庭瑜](https://github.com/3a732009)
     * Route::resource('users', '\App\Admin\Controllers\UserController');
+    
 * 管理留言 [3A732009張庭瑜](https://github.com/3a732009)
     * Route::resource('messages','\App\Admin\Controllers\MessageController');
+    
 * 管理預約參訪 [3A732009張庭瑜](https://github.com/3a732009)
     * Route::resource('visits','\App\Admin\Controllers\VisitsController');
+    
 * 寄送email [3A732009張庭瑜](https://github.com/3a732009)
     * Route::resource('sendmail','\App\Admin\Controllers\MailController');
     
@@ -113,12 +119,22 @@ ERD
 
 初始專案與DB負責的同學
 ====
+* 初始專案 [3A732005李亞宣](https://github.com/3a73205)
+* 資料庫及資料表建立、資料表關連 [3A732005李亞宣](https://github.com/3a73205) [3A732009張庭瑜](https://github.com/3a732009)
+
 額外使用的樣板
 ====
+* 前台樣板 Hielo(https://templated.co/hielo)
+
 系統使用者測試帳號
 ====
 前台-會員
 -------
+* 帳號:ab53014698@gmail.com
+* 密碼:a123456789
+* 帳號:tingyuchang595@gmail.com
+* 密碼:a123456789
+
 後台-管理者
 -------
 * 帳號:admin
