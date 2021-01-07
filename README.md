@@ -26,6 +26,36 @@
 ====
 前台
 -------
+* 首頁 [3A732005李亞宣](https://github.com/3a73205)
+Route::get('/',[\App\Http\Controllers\HomeController::class,'index'])->name('home.index');
+
+* 登入後頁面 [3A732005李亞宣](https://github.com/3a73205)
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');'
+
+* 美術館歷史 [3A732005李亞宣](https://github.com/3a73205)
+Route::get('/history',[\App\Http\Controllers\HistoryController::class,'index'])->name('history.index');
+
+* 美術館內部樓層 [3A732005李亞宣](https://github.com/3a73205)
+Route::get('/internal',[\App\Http\Controllers\InternalController::class,'index'])->name('internal.index');
+
+* 周遭景點 [3A732005李亞宣](https://github.com/3a73205)
+Route::get('/external',[\App\Http\Controllers\ExternalController::class,'index'])->name('external.index');
+
+* 參訪路線 [3A732005李亞宣](https://github.com/3a73205)
+Route::get('/ways',[\App\Http\Controllers\WaysController::class,'index'])->name('ways.index');
+Route::get('/way1',[\App\Http\Controllers\Way1Controller::class,'index'])->name('way1.index');
+Route::get('/way2',[\App\Http\Controllers\Way2Controller::class,'index'])->name('way2.index');
+Route::get('/way3',[\App\Http\Controllers\Way3Controller::class,'index'])->name('way3.index');
+* 預約參訪 [3A732005李亞宣](https://github.com/3a73205)
+Route::middleware(['auth:sanctum', 'verified'])->get('/visits',[\App\Http\Controllers\VisitsController::class,'index'])->name('visits.index');//預約參訪
+Route::post('/visit',[\App\Http\Controllers\VisitsController::class,'store'])->name('visit.store');//儲存預約參訪
+* 留言板  [3A732009張庭瑜](https://github.com/3a732009)
+Route::middleware(['auth:sanctum', 'verified'])->get('/messages', [MessageController::class,'index'])->name('messages.index');
+Route::post('/message', [MessageController::class,'store'])->name('message.store');
+Route::delete('/message/{message}', [MessageController::class,'destroy']);
+
 後台
 -------
 ERD
