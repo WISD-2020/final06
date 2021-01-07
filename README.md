@@ -56,6 +56,17 @@
 
 後台
 -------
+* 管理員頁面
+    * $router->get('/', 'HomeController@index')->name('home');
+* 管理會員
+    * Route::resource('users', '\App\Admin\Controllers\UserController');
+* 管理留言
+    * Route::resource('messages','\App\Admin\Controllers\MessageController');
+* 管理預約參訪
+    * Route::resource('visits','\App\Admin\Controllers\VisitsController');
+* 寄送email
+    * Route::resource('sendmail','\App\Admin\Controllers\MailController');
+    
 ERD
 -------
 
